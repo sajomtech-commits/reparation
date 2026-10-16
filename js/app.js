@@ -390,6 +390,45 @@ function rendreCataloguePrix() {
       </table></div>`;
   }
 
+  // --- Batterie Apple originale iPhone 12 Pro ---
+  const b12 = ETAT.data.outils.batterieOriginale12Pro;
+  const cB12 = $('#batterie-12-pro-conteneur');
+  if (b12 && cB12) {
+    const vraie = b12.options.filter(o => o.qualite.includes('Apple'));
+    const compat = b12.options.filter(o => !o.qualite.includes('Apple'));
+    const carte = o => `
+      <article class="card${o.recommande ? ' alerte' : ''}">
+        <div class="card-top">
+          <span class="tag ${o.qualite.includes('Apple') ? 't-guide' : 't-video'}">
+            ${o.qualite.includes('Apple') ? 'Apple authentique' : 'Compatible'}</span>
+          ${o.sante ? `<span class="lang">Santé ${esc(o.sante)}</span>` : ''}
+          ${o.recommande ? '<span class="lang fr">⭐ Meilleur prix Apple</span>' : ''}
+        </div>
+        <h4><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.qualite)}</a></h4>
+        <div class="meta" style="font-size:1.25rem;font-weight:800;color:var(--vert)">
+          ${o.prix.toFixed(2)} €
+          ${o.prixBarre ? `<span style="font-size:.85rem;color:var(--text-faint);text-decoration:line-through;font-weight:400">${o.prixBarre.toFixed(2)} €</span>` : ''}
+        </div>
+        <p class="pourquoi">${esc(o.description)}</p>
+        <div class="src"><span>${esc(o.fournisseur)}</span><span class="verif">✓ prix vérifié</span></div>
+      </article>`;
+
+    cB12.innerHTML = `
+      <div class="note-box warn">
+        <strong>⚠️ Le piège du mot « originale ».</strong> ${esc(b12.avertissement)}
+      </div>
+      <h3 style="margin:22px 0 12px;font-size:1.05rem">🍎 Vraies batteries Apple</h3>
+      <div class="grid">${vraie.map(carte).join('')}</div>
+      <h3 style="margin:28px 0 12px;font-size:1.05rem">🔧 Compatibles (PAS de l'Apple)</h3>
+      <div class="grid">${compat.map(carte).join('')}</div>
+      <div class="note-box">
+        <strong>🎯 Verdict.</strong> ${esc(b12.verdict)}
+      </div>
+      <div class="note-box">
+        <strong>🔬 Méthode.</strong> ${esc(b12.methode)}
+      </div>`;
+  }
+
   // --- Comparaison multi-fournisseurs ---
   const cm = cat.comparaisonMulti;
   if (cm) {

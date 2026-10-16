@@ -1196,6 +1196,67 @@
           }
         ]
       }
+    },
+    "batterieOriginale12Pro": {
+      "modele": "iPhone 12 / 12 Pro",
+      "question": "Une batterie Apple originale pour iPhone 12 Pro : quel est le moins cher ?",
+      "reponse": "La vraie question n'est pas 'où est-ce le moins cher' mais 'quelle sorte d'original'. Il existe DEUX qualités Apple authentiques, à des prix très différents. La moins chère des deux est l'Officielle Apple (Pulled) à 38,90 €.",
+      "avertissement": "⚠️ 'Originale' ne veut PAS dire 'neuve'. Une batterie 'Pulled' est une batterie Apple authentique extraite d'un iPhone neuf ou peu utilisé — elle est à 95-98 % de santé. C'est de l'Apple véritable, mais pas du neuf sorti d'usine.",
+      "options": [
+        {
+          "qualite": "Officielle Apple (Pulled)",
+          "prix": 38.9,
+          "prixBarre": null,
+          "sante": "95-98 %",
+          "description": "Batterie Apple authentique, extraite d'un appareil. Le meilleur rapport qualité/prix si vous voulez du vrai Apple.",
+          "fournisseur": "world-itech.com",
+          "url": "https://www.world-itech.com/fr/iphone-12/5269-batterie-iphone-12-pro-officielle-apple-2.html",
+          "recommande": true
+        },
+        {
+          "qualite": "Officielle Apple (Service Pack)",
+          "prix": 79.9,
+          "prixBarre": 89.9,
+          "sante": "100 % (neuve)",
+          "description": "Batterie Apple neuve scellée, canal officiel. La seule vraie 'neuve constructeur'. Prix actuellement en promo (au lieu de 89,90 €).",
+          "fournisseur": "world-itech.com",
+          "url": "https://www.world-itech.com/fr/iphone-12/6662-batterie-iphone-12-pro-officielle-apple-service-pack-2.html",
+          "recommande": false
+        },
+        {
+          "qualite": "Compatible Premium (puce TI)",
+          "prix": 19.9,
+          "prixBarre": 24.9,
+          "sante": null,
+          "description": "PAS de l'Apple : une compatible de bonne facture avec puce TI (donc l'état de santé s'affiche). C'est l'option la moins chère, mais ce n'est pas de l'original.",
+          "fournisseur": "world-itech.com",
+          "url": "https://www.world-itech.com/fr/2826-batterie-iphone-12-pro",
+          "recommande": false
+        },
+        {
+          "qualite": "Compatible standard",
+          "prix": 17.9,
+          "prixBarre": null,
+          "sante": null,
+          "description": "PAS de l'Apple. La moins chère, mais aucun avis tiers sur ce produit précis.",
+          "fournisseur": "iFixShop.fr",
+          "url": "https://www.ifixshop.fr/products/batterie-iphone-12-pro",
+          "recommande": false
+        },
+        {
+          "qualite": "Compatible sans message d'erreur",
+          "prix": 24.9,
+          "prixBarre": null,
+          "sante": null,
+          "description": "PAS de l'Apple. Évite l'alerte iOS 'Pièce inconnue' dans les réglages.",
+          "fournisseur": "iFixShop.fr",
+          "url": "https://www.ifixshop.fr/products/batterie-iphone-12-pro-sans-message-d-erreur",
+          "recommande": false
+        }
+      ],
+      "verdict": "Pour de l'Apple authentique au meilleur prix : Officielle Apple (Pulled) à 38,90 € chez world-itech — soit 41 € de moins que la Service Pack neuve. Si le client exige du neuf scellé, la Service Pack à 79,90 € (en promo) est le seul choix.",
+      "verifie": true,
+      "methode": "Prix TTC lus sur les pages produit world-itech et l'API Shopify iFixShop. Ratio HT/TTC vérifié à 1,20 exact sur les deux fiches Apple (66,58 HT = 79,90 TTC et 32,42 HT = 38,90 TTC)."
     }
   },
   "plan8Semaines": [
