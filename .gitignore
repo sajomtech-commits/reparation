@@ -1,0 +1,35 @@
+# Sécurité — ne jamais committer de secrets
+*.env
+.env
+.env.*
+secrets/
+API.md
+api_keys.env
+*.key
+*.pem
+*token*
+*secret*
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Divers
+*.log

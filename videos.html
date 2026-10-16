@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playlist vidéo — Réparation iPhone en français</title>
+<meta name="description" content="Les vidéos les plus précises pour apprendre la réparation iPhone en français, classées par utilité pédagogique avec la raison du choix.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="mark">📱</span><span class="txt">Réparation iPhone</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Parcours</a>
+      <a href="videos.html" class="active">Vidéos</a>
+      <a href="guides.html">Guides</a>
+      <a href="plan.html">Plan 8 semaines</a>
+      <a href="outils.html">Outils</a>
+      <a href="ressources.html">Ressources</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="erreur-donnees" class="note-box warn hidden" style="margin-top:20px">
+    <strong>⚠️ Impossible de charger les données.</strong> Lancez un serveur local : <code>python3 -m http.server 8000</code>.
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Playlist <span class="grad">ordonnée</span></h1>
+    <p class="lead">
+      Classées par utilité pédagogique décroissante. Chaque vidéo a été confirmée individuellement
+      via l'API oEmbed de YouTube : le titre et la chaîne affichés sont les vrais.
+    </p>
+    <div class="badges">
+      <span class="badge">Toutes en <strong>français</strong></span>
+      <span class="badge">Confirmées via <strong>oEmbed</strong></span>
+      <span class="badge">Ordre = <strong>progression</strong></span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Regarder dans cet ordre</h2>
+      <p>Commencez par le diagnostic. C'est la compétence la plus négligée et la plus rentable.</p>
+    </div>
+    <div id="videos-conteneur"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Les chaînes à suivre</h2>
+      <p>Abonnez-vous à Bricophone et SOSav : elles couvrent iPhone 11 → 17, un tuto par pièce.</p>
+    </div>
+    <div id="chaines-conteneur"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Chaînes écartées après vérification</h2>
+      <p>Elles remontent dans les recherches mais ne correspondent pas à ce qu'elles prétendent.</p>
+    </div>
+    <div id="ecartees-conteneur"></div>
+    <div class="note-box warn">
+      <strong>Le piège le plus courant :</strong> YouTube traduit automatiquement les titres des chaînes
+      anglophones. Une vidéo peut donc s'afficher en français dans les résultats alors que la voix est en anglais.
+      Vérifiez toujours la langue réelle avant de suivre un tuto.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <p>Les vidéos sont hébergées par YouTube et appartiennent à leurs créateurs. Ce site ne fait que les indexer.</p>
+      <p>Notes /5 : évaluations documentées (format, régularité, clarté annoncée), et non des tests de visionnage complet.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Réparation iPhone — Formations gratuites en français</title>
+<meta name="description" content="Apprendre à réparer un iPhone de zéro, gratuitement, en français. Guides pas à pas, vidéos, plan de formation 8 semaines et matériel vérifié. iPhone 11 à 15.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo">
+      <span class="mark">📱</span>
+      <span class="txt">Réparation iPhone</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Parcours</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="guides.html">Guides</a>
+      <a href="plan.html">Plan 8 semaines</a>
+      <a href="outils.html">Outils</a>
+      <a href="ressources.html">Ressources</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="erreur-donnees" class="note-box warn hidden" style="margin-top:20px">
+    <strong>⚠️ Impossible de charger les données.</strong>
+    Si vous ouvrez ce fichier directement depuis votre disque (<code>file://</code>), le navigateur bloque la lecture du fichier JSON.
+    Lancez un petit serveur local : <code>python3 -m http.server 8000</code> puis ouvrez <code>http://localhost:8000</code>.
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Apprendre à réparer un <span class="grad">iPhone</span><br>de zéro, gratuitement</h1>
+    <p class="lead">
+      Un parcours complet en français, du premier démontage à la micro-soudure.
+      Chaque ressource a été ouverte et testée : aucun lien mort, aucune URL inventée.
+    </p>
+
+    <div class="badges">
+      <span class="badge"><strong>32</strong> ressources classées</span>
+      <span class="badge"><strong>100 %</strong> gratuit</span>
+      <span class="badge">iPhone <strong>11 → 15</strong></span>
+      <span class="badge"><strong>64/65</strong> liens en HTTP 200</span>
+    </div>
+
+    <div class="cta-row">
+      <a href="#parcours" class="btn btn-primary">Voir le parcours ↓</a>
+      <a href="plan.html" class="btn btn-ghost">Plan semaine par semaine</a>
+    </div>
+  </div>
+</section>
+
+<section id="parcours">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Le parcours, du niveau 0 au niveau avancé</h2>
+      <p>
+        Quatre niveaux progressifs. Ne sautez pas d'étape : la micro-soudure ne s'apprend pas
+        avant d'avoir fait une dizaine de remplacements d'écran et de batterie.
+      </p>
+    </div>
+
+    <div class="search-bar">
+      <input type="search" id="recherche" placeholder="Rechercher une ressource, un modèle, une chaîne…" aria-label="Rechercher">
+      <span id="compteur" class="muted" style="font-size:.85rem"></span>
+    </div>
+
+    <div class="filters">
+      <button class="chip active" data-filtre="tous">Tout</button>
+      <button class="chip" data-filtre="video">Vidéos</button>
+      <button class="chip" data-filtre="guide">Guides iFixit</button>
+      <button class="chip" data-filtre="article">Articles</button>
+      <button class="chip" data-filtre="cours">Cours</button>
+    </div>
+
+    <div id="parcours-conteneur"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>⚠️ Les 6 règles à lire avant d'ouvrir un iPhone</h2>
+      <p>Ces erreurs transforment une réparation à 30 € en carte mère morte.</p>
+    </div>
+    <div id="avertissements-conteneur"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h5>Parcours</h5>
+        <a href="index.html">Toutes les ressources</a>
+        <a href="videos.html">Playlist vidéo</a>
+        <a href="guides.html">Guides par modèle</a>
+        <a href="plan.html">Plan 8 semaines</a>
+      </div>
+      <div class="foot-col">
+        <h5>Équipement</h5>
+        <a href="outils.html">Kit débutant</a>
+        <a href="outils.html#pieces">Pièces détachées</a>
+        <a href="outils.html#fournisseurs">Fournisseurs</a>
+        <a href="outils.html#pieges">Pièges à éviter</a>
+      </div>
+      <div class="foot-col">
+        <h5>Sources principales</h5>
+        <a href="https://fr.ifixit.com/Tutoriel" target="_blank" rel="noopener">iFixit FR</a>
+        <a href="https://www.youtube.com/@bricophone" target="_blank" rel="noopener">Bricophone</a>
+        <a href="https://www.youtube.com/@SosavFr" target="_blank" rel="noopener">SOSav</a>
+        <a href="https://therepairacademy.com/blog/" target="_blank" rel="noopener">The Repair Academy (blog)</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>Chaque lien a été testé automatiquement : 64 sur 65 répondent en HTTP 200. Le seul échec (Repair Café) est un blocage anti-robot, pas un lien mort — il fonctionne dans un navigateur.</p>
+      <p>Les ressources appartiennent à leurs auteurs respectifs. Ce site est un index pédagogique, sans affiliation. Aucun PDF constructeur n'est hébergé ici : les liens renvoient vers les sources officielles.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

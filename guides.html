@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guides pas à pas par modèle — Réparation iPhone</title>
+<meta name="description" content="Guides iFixit en français pour réparer un iPhone : écran, batterie, connecteur de charge, caméra, vitre arrière. iPhone 11 à 15.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="mark">📱</span><span class="txt">Réparation iPhone</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Parcours</a>
+      <a href="videos.html">Vidéos</a>
+      <a href="guides.html" class="active">Guides</a>
+      <a href="plan.html">Plan 8 semaines</a>
+      <a href="outils.html">Outils</a>
+      <a href="ressources.html">Ressources</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="erreur-donnees" class="note-box warn hidden" style="margin-top:20px">
+    <strong>⚠️ Impossible de charger les données.</strong> Lancez un serveur local : <code>python3 -m http.server 8000</code>.
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Guides <span class="grad">pas à pas</span></h1>
+    <p class="lead">
+      Regroupés par modèle. Chaque étape est photographiée et numérotée, avec la liste d'outils
+      et les pièces nécessaires. Gratuit, sans inscription.
+    </p>
+    <div class="badges">
+      <span class="badge">En <strong>français</strong></span>
+      <span class="badge">iPhone <strong>11 → 15</strong></span>
+      <span class="badge">Photos <strong>étape par étape</strong></span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Trouver le guide de votre modèle</h2>
+      <p>
+        Cliquez sur le modèle qui vous intéresse. Les guides iFixit couvrent aussi les pièces
+        que nous n'avons pas listées ici — explorez la page du modèle.
+      </p>
+    </div>
+    <div class="note-box">
+      <strong>💡 Le raccourci le plus efficace :</strong> ouvrez la page iFixit de votre modèle exact
+      et vous y trouverez <em>tous</em> les guides disponibles, pas seulement ceux listés ci-dessous.
+      <a href="https://fr.ifixit.com/Device/iPhone" target="_blank" rel="noopener">Voir tous les iPhone sur iFixit FR →</a>
+    </div>
+    <div id="guides-conteneur"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>⚠️ À lire avant votre premier écran d'iPhone</h2>
+      <p>La panne que 90 % des débutants provoquent, et qui est définitive.</p>
+    </div>
+    <div class="alert">
+      <span class="ico">🔒</span>
+      <div>
+        <h4>Face ID est irréparable s'il est abîmé</h4>
+        <p>
+          Le module Face ID et le capteur de proximité sont appairés à la carte mère. Une nappe
+          déchirée ou un composant arraché = Face ID perdu <strong>définitivement</strong>, sans
+          possibilité de réparation. Débranchez toujours la batterie avant de toucher aux nappes
+          d'écran, et lisez l'article dédié avant de commencer.
+        </p>
+      </div>
+    </div>
+    <div class="alert">
+      <span class="ico">🔧</span>
+      <div>
+        <h4>Le message « Pièce inconnue » d'iOS</h4>
+        <p>
+          Depuis iOS 15, un écran ou une batterie non appairé déclenche une alerte dans
+          Réglages → Général → Informations. Cela n'empêche pas le fonctionnement, mais le client
+          doit être prévenu. Les écrans « sans message d'erreur » (voir la page Outils) évitent ce désagrément.
+        </p>
+      </div>
+    </div>
+    <div class="alert">
+      <span class="ico">🔋</span>
+      <div>
+        <h4>La santé de la batterie</h4>
+        <p>
+          Une batterie sans puce TI (Texas Instruments) ne pourra pas afficher son état de santé,
+          et iOS affichera « Batterie inconnue ». Privilégiez les batteries avec puce.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <p>Les guides renvoient vers iFixit, leur auteur. Aucun contenu n'est copié ni réhébergé ici.</p>
+      <p>⚠️ Apple ne publie plus de manuels de réparation iPhone téléchargeables en PDF : les liens historiques renvoient désormais vers une page HTML. iFixit FR reste la meilleure ressource écrite en français.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
