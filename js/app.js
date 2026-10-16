@@ -390,6 +390,69 @@ function rendreCataloguePrix() {
       </table></div>`;
   }
 
+  // --- Enquête : réparation à 60 € ---
+  const e60 = ETAT.data.outils.enquete60euros;
+  const cE60 = $('#enquete-60-conteneur');
+  if (e60 && cE60) {
+    const calc = e60.calcul;
+    cE60.innerHTML = `
+      <div class="note-box warn">
+        <strong>La réponse en une phrase.</strong> ${esc(e60.reponseCourte)}
+      </div>
+      <p style="margin:16px 0">${esc(e60.explication)}</p>
+
+      <h3 style="margin:26px 0 12px;font-size:1.05rem">Les 3 leviers possibles</h3>
+      <div class="grid">
+        ${e60.leviers.map(l => `
+          <article class="card${l.honnete ? '' : ' alerte'}">
+            <div class="card-top">
+              <span class="tag ${l.honnete ? 't-article' : 't-video'}">
+                ${l.honnete ? '✓ Pratique légitime' : '✗ Tromperie'}</span>
+            </div>
+            <h4>${esc(l.titre)}</h4>
+            <p class="pourquoi">${esc(l.texte)}</p>
+          </article>`).join('')}
+      </div>
+
+      <h3 style="margin:30px 0 12px;font-size:1.05rem">${esc(calc.titre)}</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Pièce utilisée</th><th>Coût d'achat</th><th>Marge sur une vente à 60 €</th><th>Verdict</th></tr></thead>
+        <tbody>${calc.lignes.map(l => `
+          <tr>
+            <td><strong>${esc(l.piece)}</strong></td>
+            <td>${l.cout.toFixed(2)} €</td>
+            <td style="font-weight:700;color:${l.marge > 0 ? 'var(--vert)' : 'var(--rouge)'}">
+              ${l.marge > 0 ? '+' : ''}${l.marge.toFixed(2)} €</td>
+            <td>${l.possible ? '✅ Possible' : '❌ Impossible'}</td>
+          </tr>`).join('')}</tbody>
+      </table></div>
+      <div class="note-box warn" style="margin-top:14px">
+        <strong>Conclusion arithmétique.</strong> ${esc(calc.conclusion)}
+      </div>
+
+      <h3 style="margin:30px 0 12px;font-size:1.05rem">📊 ${esc(e60.tarifsMarche.titre)}</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Prestation</th><th>Prix constaté</th><th>Note</th></tr></thead>
+        <tbody>${e60.tarifsMarche.lignes.map(l => `
+          <tr><td><strong>${esc(l.prestation)}</strong></td>
+              <td class="prix">${esc(l.prix)}</td>
+              <td class="zone">${esc(l.note)}</td></tr>`).join('')}</tbody>
+      </table></div>
+      <p class="muted" style="font-size:.82rem;margin-top:8px">
+        Source : <a href="${esc(e60.tarifsMarche.url)}" target="_blank" rel="noopener">${esc(e60.tarifsMarche.source)}</a>
+      </p>
+
+      <h3 style="margin:30px 0 12px;font-size:1.05rem">🛡️ Comment se protéger</h3>
+      ${e60.commentSeProteger.map(c => `
+        <div class="alert" style="border-left-color:var(--vert)">
+          <span class="ico">✓</span><div><p>${esc(c)}</p></div>
+        </div>`).join('')}
+
+      <div class="note-box" style="margin-top:18px">
+        <strong>🎯 À retenir.</strong> ${esc(e60.aRetenir)}
+      </div>`;
+  }
+
   // --- Batterie Apple originale iPhone 12 Pro ---
   const b12 = ETAT.data.outils.batterieOriginale12Pro;
   const cB12 = $('#batterie-12-pro-conteneur');

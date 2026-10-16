@@ -1257,6 +1257,119 @@
       "verdict": "Pour de l'Apple authentique au meilleur prix : Officielle Apple (Pulled) à 38,90 € chez world-itech — soit 41 € de moins que la Service Pack neuve. Si le client exige du neuf scellé, la Service Pack à 79,90 € (en promo) est le seul choix.",
       "verifie": true,
       "methode": "Prix TTC lus sur les pages produit world-itech et l'API Shopify iFixShop. Ratio HT/TTC vérifié à 1,20 exact sur les deux fiches Apple (66,58 HT = 79,90 TTC et 32,42 HT = 38,90 TTC)."
+    },
+    "enquete60euros": {
+      "question": "Comment des réparateurs facturent-ils un écran iPhone 60 € « en original sans message » ?",
+      "reponseCourte": "Dans l'immense majorité des cas : ils ne mettent PAS d'original. À 60 €, une vraie pièce Apple reconditionnée (99,90 €) ferait perdre 40 €. Ce qui est vendu comme « original sans message » est presque toujours un écran compatible de qualité correcte, dont le message d'erreur a été supprimé par reprogrammation.",
+      "explication": "Trois leviers rendent ce prix possible, et un seul est honnête :",
+      "leviers": [
+        {
+          "titre": "1. La reprogrammation (le plus courant)",
+          "honnete": true,
+          "texte": "Le réparateur utilise un programmateur (JCID V1SE, Qianli iCopy…) pour copier les données de la dalle d'origine vers la nouvelle. iOS ne voit plus la différence : le message disparaît et True Tone est restauré. La pièce reste compatible, pas Apple. Coût de l'investissement : ~160 €, rentabilisé en 5-6 réparations."
+        },
+        {
+          "titre": "2. La pièce compatible « sans message » vendue comme telle",
+          "honnete": true,
+          "texte": "Certains fournisseurs vendent des écrans dont la puce est déjà programmée en usine. C'est honnête si le vendeur annonce clairement « compatible sans message d'erreur » — c'est le cas de la ligne à 79,90 € chez iFixShop. Mais à 60 € de vente, ce n'est déjà plus rentable."
+        },
+        {
+          "titre": "3. Le mensonge sur l'origine",
+          "honnete": false,
+          "texte": "Le réparateur dit « original » en parlant d'un écran compatible. C'est de la tromperie sur la marchandise (article L217-6 du Code de la consommation). Certains vont jusqu'à coller une étiquette Apple sur une dalle chinoise. C'est ce qui donne mauvaise réputation au métier."
+        }
+      ],
+      "calcul": {
+        "titre": "Pourquoi 60 € ne peut PAS être de l'original",
+        "lignes": [
+          {
+            "piece": "Incell HD LCD (compatible)",
+            "cout": 30.9,
+            "marge": 29.1,
+            "possible": true
+          },
+          {
+            "piece": "LTPS FHD (compatible)",
+            "cout": 34.9,
+            "marge": 25.1,
+            "possible": true
+          },
+          {
+            "piece": "Hard OLED (compatible)",
+            "cout": 59.9,
+            "marge": 0.1,
+            "possible": true
+          },
+          {
+            "piece": "Soft OLED (compatible haut de gamme)",
+            "cout": 69.9,
+            "marge": -9.9,
+            "possible": false
+          },
+          {
+            "piece": "Soft OLED sans message",
+            "cout": 79.9,
+            "marge": -19.9,
+            "possible": false
+          },
+          {
+            "piece": "Original Apple reconditionné",
+            "cout": 99.9,
+            "marge": -39.9,
+            "possible": false
+          },
+          {
+            "piece": "Service Pack Apple (neuf)",
+            "cout": 159.9,
+            "marge": -99.9,
+            "possible": false
+          }
+        ],
+        "conclusion": "À 60 € de vente, seuls les écrans compatibles à 30-35 € laissent une marge. Toute pièce Apple coûte plus cher que le prix de vente."
+      },
+      "tarifsMarche": {
+        "titre": "Les vrais tarifs du marché (relevés chez un réparateur indépendant français)",
+        "source": "DigiRepair (Valenciennes / Nérac), grille publiée",
+        "url": "https://www.digirepair.fr/tarifs",
+        "lignes": [
+          {
+            "prestation": "Diagnostic",
+            "prix": "Gratuit",
+            "note": ""
+          },
+          {
+            "prestation": "Remplacement écran iPhone (appairage inclus si possible)",
+            "prix": "65 à 350 €",
+            "note": "Le bas de la fourchette = modèle ancien + pièce compatible"
+          },
+          {
+            "prestation": "Batterie iPhone + reprogrammation santé",
+            "prix": "59 à 89 €",
+            "note": ""
+          },
+          {
+            "prestation": "Caméra iPhone",
+            "prix": "79 à 149 €",
+            "note": ""
+          },
+          {
+            "prestation": "Réparation nappe Face ID (micro-soudure)",
+            "prix": "Sur devis",
+            "note": ""
+          }
+        ]
+      },
+      "commentSeProteger": [
+        "Demandez TOUJOURS la marque et la qualité exacte de la pièce sur le devis, par écrit.",
+        "« Original » doit signifier Apple. Si le réparateur hésite, c'est du compatible.",
+        "Demandez si True Tone sera conservé — un écran non appairé le perd.",
+        "Testez True Tone, la luminosité auto et l'état de santé batterie DEVANT le réparateur, avant de payer.",
+        "Vérifiez dans Réglages > Général > Informations s'il y a un avertissement « Pièce inconnue ».",
+        "Un prix anormalement bas sur un iPhone récent est un signal : la pièce n'est pas ce qu'on vous dit.",
+        "À l'inverse, un prix bas est parfaitement légitime si le vendeur annonce « compatible » honnêtement."
+      ],
+      "aRetenir": "Le problème n'est pas le prix bas — c'est le mensonge sur la qualité. Un écran compatible à 60 € annoncé comme compatible est une bonne affaire. Le même écran annoncé comme « original » est une tromperie.",
+      "verifie": true
     }
   },
   "plan8Semaines": [
