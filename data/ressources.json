@@ -841,7 +841,270 @@
       "Payer par virement bancaire chez un fournisseur inconnu : aucun recours en cas de litige. Privilégie la carte bancaire, qui offre une protection acheteur.",
       "Commander chez PiecesPourPhone.fr : le domaine est MORT (le DNS ne résout plus). Vérifie toujours qu'un site répond avant de commander.",
       "Se fier aux notes agrégées (Gridinsoft, RatingFacts) comme si c'était Trustpilot : ce sont des scores algorithmiques, pas des avis clients réels. Cherche la source primaire."
-    ]
+    ],
+    "cataloguePrix": {
+      "source": "iFixShop.fr",
+      "sourceUrl": "https://www.ifixshop.fr",
+      "methode": "Prix extraits de l'API Shopify officielle (/collections/<modele>/products.json) — données brutes de la boutique, pas de scraping",
+      "verifie": true,
+      "ecrans": {
+        "iPhone 11": [
+          {
+            "qualite": "Incell HD LCD",
+            "prix": 28.9
+          },
+          {
+            "qualite": "LTPS FHD",
+            "prix": 34.9
+          },
+          {
+            "qualite": "LCD Original Apple Reconditionné",
+            "prix": 49.9
+          },
+          {
+            "qualite": "LCD Original Apple Service Pack",
+            "prix": 89.9
+          }
+        ],
+        "iPhone 12": [
+          {
+            "qualite": "Incell HD LCD",
+            "prix": 30.9
+          },
+          {
+            "qualite": "LTPS FHD",
+            "prix": 34.9
+          },
+          {
+            "qualite": "Hard OLED",
+            "prix": 59.9
+          },
+          {
+            "qualite": "Soft OLED",
+            "prix": 69.9
+          },
+          {
+            "qualite": "Soft OLED – Sans Message d'Erreur",
+            "prix": 79.9
+          },
+          {
+            "qualite": "OLED Original Apple Reconditionné",
+            "prix": 89.9
+          },
+          {
+            "qualite": "OLED Original Apple Service Pack",
+            "prix": 149.9
+          }
+        ],
+        "iPhone 13": [
+          {
+            "qualite": "Incell HD LCD",
+            "prix": 30.9
+          },
+          {
+            "qualite": "LTPS FHD",
+            "prix": 34.9
+          },
+          {
+            "qualite": "Hard OLED",
+            "prix": 59.9
+          },
+          {
+            "qualite": "Soft OLED",
+            "prix": 69.9
+          },
+          {
+            "qualite": "Soft OLED – Sans Message d'Erreur",
+            "prix": 79.9
+          },
+          {
+            "qualite": "OLED Original Apple Reconditionné",
+            "prix": 99.9
+          },
+          {
+            "qualite": "OLED Original Apple Service Pack",
+            "prix": 159.9
+          }
+        ],
+        "iPhone 14": [
+          {
+            "qualite": "Incell HD LCD",
+            "prix": 30.9
+          },
+          {
+            "qualite": "LTPS FHD",
+            "prix": 34.9
+          },
+          {
+            "qualite": "Hard OLED",
+            "prix": 59.9
+          },
+          {
+            "qualite": "Soft OLED",
+            "prix": 79.9
+          },
+          {
+            "qualite": "Soft OLED – Sans Message d'Erreur",
+            "prix": 79.9
+          },
+          {
+            "qualite": "OLED Original Apple Reconditionné",
+            "prix": 99.9
+          },
+          {
+            "qualite": "OLED Original Apple Service Pack",
+            "prix": 179.9
+          }
+        ],
+        "iPhone 15": [
+          {
+            "qualite": "Incell HD LCD",
+            "prix": 32.9
+          },
+          {
+            "qualite": "LTPS FHD",
+            "prix": 39.9
+          },
+          {
+            "qualite": "Hard OLED",
+            "prix": 59.9
+          },
+          {
+            "qualite": "Soft OLED",
+            "prix": 79.9
+          },
+          {
+            "qualite": "Soft OLED – Sans Message d'Erreur",
+            "prix": 99.9
+          },
+          {
+            "qualite": "OLED Original Apple Reconditionné",
+            "prix": 129.9
+          },
+          {
+            "qualite": "OLED Original Apple Service Pack",
+            "prix": 279.9
+          }
+        ]
+      },
+      "batteries": {
+        "iPhone 11": [
+          {
+            "qualite": "Standard",
+            "prix": 17.9
+          }
+        ],
+        "iPhone 12": [
+          {
+            "qualite": "Standard",
+            "prix": 17.9
+          },
+          {
+            "qualite": "Sans Message d'Erreur",
+            "prix": 24.9
+          }
+        ],
+        "iPhone 13": [
+          {
+            "qualite": "Standard",
+            "prix": 18.9
+          },
+          {
+            "qualite": "Sans Message d'Erreur",
+            "prix": 29.9
+          }
+        ],
+        "iPhone 14": [
+          {
+            "qualite": "Standard",
+            "prix": 19.9
+          },
+          {
+            "qualite": "Sans Message d'Erreur",
+            "prix": 29.9
+          }
+        ],
+        "iPhone 15": [
+          {
+            "qualite": "Standard",
+            "prix": 19.9
+          },
+          {
+            "qualite": "Sans Message d'Erreur",
+            "prix": 29.9
+          }
+        ]
+      },
+      "connecteurs": {
+        "iPhone 11": 14.9,
+        "iPhone 12": 14.9,
+        "iPhone 13": 19.9,
+        "iPhone 14": 19.9,
+        "iPhone 15": 19.9
+      },
+      "consommables": [
+        {
+          "article": "Joint d'étanchéité adhésif écran",
+          "prix": 4.9
+        },
+        {
+          "article": "Adhésif batterie",
+          "prix": 3.9
+        },
+        {
+          "article": "Caméra avant",
+          "prix": 10.9
+        },
+        {
+          "article": "Caméra arrière",
+          "prix": 29.9
+        },
+        {
+          "article": "Écouteur interne",
+          "prix": 6.9
+        },
+        {
+          "article": "Haut-parleur",
+          "prix": 6.9
+        },
+        {
+          "article": "Vibreur",
+          "prix": 6.9
+        },
+        {
+          "article": "Nappe Wi-Fi",
+          "prix": 7.9
+        },
+        {
+          "article": "Aimant MagSafe",
+          "prix": 9.9
+        },
+        {
+          "article": "Tiroir SIM",
+          "prix": 5.9
+        }
+      ],
+      "comparaisonApple": [
+        {
+          "fournisseur": "iFixShop.fr",
+          "produit": "Écran iPhone 13 OLED Original Apple Reconditionné",
+          "prix": 99.9,
+          "url": "https://www.ifixshop.fr/products/ecran-iphone-13-oled-original-apple-reconditionne"
+        },
+        {
+          "fournisseur": "iFixShop.fr",
+          "produit": "Écran iPhone 13 OLED Original Apple Service Pack",
+          "prix": 159.9,
+          "url": "https://www.ifixshop.fr/products/ecran-iphone-13-oled-original-apple-service-pack"
+        },
+        {
+          "fournisseur": "LDLC",
+          "produit": "Écran Apple Original iPhone 13 (neuf)",
+          "prix": 169.0,
+          "url": "https://www.ldlc.com/fiche/PB00722385.html"
+        }
+      ]
+    }
   },
   "plan8Semaines": [
     {

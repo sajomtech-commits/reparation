@@ -213,6 +213,8 @@ function rendreOutils() {
             <td>${esc(p.note)}</td></tr>`).join('')}</tbody>
     </table></div>`;
 
+  rendreCataloguePrix();
+
   const cF = $('#fournisseurs');
   if (cF) cF.innerHTML = `
     <div class="table-wrap"><table>
@@ -305,6 +307,103 @@ function rendreAnnexes() {
   if (cAv) cAv.innerHTML = ETAT.data.avertissements.map(a => `
     <div class="alert"><span class="ico">⚠️</span>
       <div><h4>${esc(a.titre)}</h4><p>${esc(a.texte)}</p></div></div>`).join('');
+}
+
+/* ---------- Catalogue de prix vérifiés ---------- */
+function rendreCataloguePrix() {
+  const cat = ETAT.data && ETAT.data.outils.cataloguePrix;
+  if (!cat) return;
+
+  const MODELE_LABEL = {
+    'iPhone 11': 'iPhone 11', 'iPhone 12': 'iPhone 12', 'iPhone 13': 'iPhone 13',
+    'iPhone 14': 'iPhone 14', 'iPhone 15': 'iPhone 15'
+  };
+
+  // --- Écrans : tableau à double entrée modèle x qualité ---
+  const cE = $('#catalogue-ecrans');
+  if (cE) {
+    const modeles = Object.keys(cat.ecrans);
+    // Union des qualités, dans l'ordre du premier modèle le plus complet
+    const toutes = [];
+    modeles.forEach(m => cat.ecrans[m].forEach(e => {
+      if (!toutes.includes(e.qualite)) toutes.push(e.qualite);
+    }));
+    cE.innerHTML = `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Qualité</th>${modeles.map(m => `<th>${esc(MODELE_LABEL[m] || m)}</th>`).join('')}</tr></thead>
+        <tbody>${toutes.map(q => `
+          <tr>
+            <td><strong>${esc(q)}</strong></td>
+            ${modeles.map(m => {
+              const e = cat.ecrans[m].find(x => x.qualite === q);
+              return `<td class="prix">${e ? e.prix.toFixed(2) + ' €' : '—'}</td>`;
+            }).join('')}
+          </tr>`).join('')}</tbody>
+      </table></div>`;
+  }
+
+  // --- Batteries ---
+  const cB = $('#catalogue-batteries');
+  if (cB) {
+    const modeles = Object.keys(cat.batteries);
+    const toutes = [];
+    modeles.forEach(m => cat.batteries[m].forEach(e => {
+      if (!toutes.includes(e.qualite)) toutes.push(e.qualite);
+    }));
+    cB.innerHTML = `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Type</th>${modeles.map(m => `<th>${esc(m)}</th>`).join('')}</tr></thead>
+        <tbody>${toutes.map(q => `
+          <tr>
+            <td><strong>${esc(q)}</strong></td>
+            ${modeles.map(m => {
+              const e = cat.batteries[m].find(x => x.qualite === q);
+              return `<td class="prix">${e ? e.prix.toFixed(2) + ' €' : '—'}</td>`;
+            }).join('')}
+          </tr>`).join('')}</tbody>
+      </table></div>`;
+  }
+
+  // --- Connecteurs ---
+  const cC = $('#catalogue-connecteurs');
+  if (cC) {
+    cC.innerHTML = `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Modèle</th><th>Prix</th><th>Note</th></tr></thead>
+        <tbody>${Object.entries(cat.connecteurs).map(([m, p]) => `
+          <tr><td><strong>${esc(m)}</strong></td>
+              <td class="prix">${p.toFixed(2)} €</td>
+              <td class="zone">${m === 'iPhone 11' || m === 'iPhone 12' ? 'Lightning' : 'Lightning (15 = USB-C sur la carte)'}</td></tr>`).join('')}
+        </tbody>
+      </table></div>`;
+  }
+
+  // --- Consommables ---
+  const cK = $('#catalogue-consommables');
+  if (cK) {
+    cK.innerHTML = `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Article</th><th>Prix</th></tr></thead>
+        <tbody>${cat.consommables.map(c => `
+          <tr><td>${esc(c.article)}</td><td class="prix">${c.prix.toFixed(2)} €</td></tr>`).join('')}
+        </tbody>
+      </table></div>`;
+  }
+
+  // --- Comparaison Apple Original ---
+  const cA = $('#comparaison-apple');
+  if (cA) {
+    cA.innerHTML = `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Fournisseur</th><th>Produit</th><th>Prix</th></tr></thead>
+        <tbody>${cat.comparaisonApple.map(c => `
+          <tr>
+            <td><a href="${esc(c.url)}" target="_blank" rel="noopener"><strong>${esc(c.fournisseur)}</strong></a></td>
+            <td>${esc(c.produit)}</td>
+            <td class="prix">${c.prix.toFixed(2)} €</td>
+          </tr>`).join('')}</tbody>
+      </table></div>`;
+  }
 }
 
 /* ---------- Init ---------- */
