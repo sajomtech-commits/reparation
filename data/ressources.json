@@ -5,7 +5,6 @@
     "dateVerification": "Vérification par test HTTP réel — chaque lien renvoie 200",
     "modele": "iPhone 11 → iPhone 15"
   },
-
   "parcours": [
     {
       "niveau": 0,
@@ -63,7 +62,6 @@
         }
       ]
     },
-
     {
       "niveau": 1,
       "titre": "Les réparations qui paient — écran et batterie",
@@ -181,7 +179,6 @@
         }
       ]
     },
-
     {
       "niveau": 2,
       "titre": "Élargir — connecteur, caméra, châssis",
@@ -274,7 +271,6 @@
         }
       ]
     },
-
     {
       "niveau": 3,
       "titre": "Micro-soudure et diagnostic carte mère",
@@ -428,66 +424,411 @@
       ]
     }
   ],
-
   "chaines": [
-    { "nom": "Bricophone", "url": "https://www.youtube.com/@bricophone", "note": 5, "abonnes": "~156 k", "pourquoi": "Un tuto par modèle ET par pièce. iPhone 11→17, démontages complets. La référence FR la plus complète.", "verifie": true },
-    { "nom": "SOSav", "url": "https://www.youtube.com/@SosavFr", "note": 5, "abonnes": "~107 k", "pourquoi": "Format « démontage complet écran+batterie+connecteur » en une seule vidéo. Très efficace pédagogiquement.", "verifie": true },
-    { "nom": "Lebidouilleur Phone", "url": "https://www.youtube.com/@LebidouilleurPhone", "note": 4.5, "abonnes": "~11,5 k", "pourquoi": "La meilleure chaîne FR pour le diagnostic carte mère. Enseigne le raisonnement, pas juste le geste. Lives non scénarisés.", "verifie": true },
-    { "nom": "world-itech", "url": "https://www.youtube.com/@world-itech", "note": 4.5, "abonnes": "~18 k", "pourquoi": "Capsules sur les pièges concrets : nappe en trop, écran non reconnu, comparatifs qualité écrans/batteries.", "verifie": true },
-    { "nom": "Répar'Smartphone", "url": "https://www.youtube.com/@Repar-smartphoneFr", "note": 4, "abonnes": "~15 k", "pourquoi": "Vraies réparations de pannes commentées, pas des tutos idéalisés.", "verifie": true },
-    { "nom": "Simon Liegeois", "url": "https://www.youtube.com/@SimonLiegeoisOfficiel", "note": 4, "abonnes": "~58,5 k", "pourquoi": "Bases d'électronique générale : lecture de schémas, raisonnement de dépannage.", "verifie": true },
-    { "nom": "Lecode Heverest", "url": "https://www.youtube.com/@LecodeHeverestofficiel", "note": 4, "abonnes": "~122 k", "pourquoi": "Série « cours de microsoudure » structurée en plusieurs parties.", "verifie": true },
-    { "nom": "Tout-pour-Phone", "url": "https://www.youtube.com/@ToutpourPhone", "note": 3.5, "abonnes": "~12,8 k", "pourquoi": "Tutos courts iPhone 13/14. Bon pour une deuxième démonstration du même geste.", "verifie": true },
-    { "nom": "Docteur Smartphone", "url": "https://www.youtube.com/@docteursmartphone", "note": 3.5, "abonnes": "~5,8 k", "pourquoi": "Descriptions écrites détaillées sous chaque vidéo.", "verifie": true },
-    { "nom": "The Repair Academy", "url": "https://www.youtube.com/@TheRepairAcademy", "note": 3.5, "abonnes": "—", "pourquoi": "⚠️ La chaîne est surtout du marketing. En revanche leur BLOG est excellent (voir les articles ci-dessus).", "verifie": true }
+    {
+      "nom": "Bricophone",
+      "url": "https://www.youtube.com/@bricophone",
+      "note": 5,
+      "abonnes": "~156 k",
+      "pourquoi": "Un tuto par modèle ET par pièce. iPhone 11→17, démontages complets. La référence FR la plus complète.",
+      "verifie": true
+    },
+    {
+      "nom": "SOSav",
+      "url": "https://www.youtube.com/@SosavFr",
+      "note": 5,
+      "abonnes": "~107 k",
+      "pourquoi": "Format « démontage complet écran+batterie+connecteur » en une seule vidéo. Très efficace pédagogiquement.",
+      "verifie": true
+    },
+    {
+      "nom": "Lebidouilleur Phone",
+      "url": "https://www.youtube.com/@LebidouilleurPhone",
+      "note": 4.5,
+      "abonnes": "~11,5 k",
+      "pourquoi": "La meilleure chaîne FR pour le diagnostic carte mère. Enseigne le raisonnement, pas juste le geste. Lives non scénarisés.",
+      "verifie": true
+    },
+    {
+      "nom": "world-itech",
+      "url": "https://www.youtube.com/@world-itech",
+      "note": 4.5,
+      "abonnes": "~18 k",
+      "pourquoi": "Capsules sur les pièges concrets : nappe en trop, écran non reconnu, comparatifs qualité écrans/batteries.",
+      "verifie": true
+    },
+    {
+      "nom": "Répar'Smartphone",
+      "url": "https://www.youtube.com/@Repar-smartphoneFr",
+      "note": 4,
+      "abonnes": "~15 k",
+      "pourquoi": "Vraies réparations de pannes commentées, pas des tutos idéalisés.",
+      "verifie": true
+    },
+    {
+      "nom": "Simon Liegeois",
+      "url": "https://www.youtube.com/@SimonLiegeoisOfficiel",
+      "note": 4,
+      "abonnes": "~58,5 k",
+      "pourquoi": "Bases d'électronique générale : lecture de schémas, raisonnement de dépannage.",
+      "verifie": true
+    },
+    {
+      "nom": "Lecode Heverest",
+      "url": "https://www.youtube.com/@LecodeHeverestofficiel",
+      "note": 4,
+      "abonnes": "~122 k",
+      "pourquoi": "Série « cours de microsoudure » structurée en plusieurs parties.",
+      "verifie": true
+    },
+    {
+      "nom": "Tout-pour-Phone",
+      "url": "https://www.youtube.com/@ToutpourPhone",
+      "note": 3.5,
+      "abonnes": "~12,8 k",
+      "pourquoi": "Tutos courts iPhone 13/14. Bon pour une deuxième démonstration du même geste.",
+      "verifie": true
+    },
+    {
+      "nom": "Docteur Smartphone",
+      "url": "https://www.youtube.com/@docteursmartphone",
+      "note": 3.5,
+      "abonnes": "~5,8 k",
+      "pourquoi": "Descriptions écrites détaillées sous chaque vidéo.",
+      "verifie": true
+    },
+    {
+      "nom": "The Repair Academy",
+      "url": "https://www.youtube.com/@TheRepairAcademy",
+      "note": 3.5,
+      "abonnes": "—",
+      "pourquoi": "⚠️ La chaîne est surtout du marketing. En revanche leur BLOG est excellent (voir les articles ci-dessus).",
+      "verifie": true
+    }
   ],
-
   "chainesEcartees": [
-    { "nom": "iProMx", "raison": "Présentée par des agrégateurs comme chaîne FR de réparation → c'est une chaîne de gaming GTA 5.", "verifie": true },
-    { "nom": "iDoctor UK", "raison": "Titres auto-traduits en français par YouTube, mais la chaîne est anglophone.", "verifie": true },
-    { "nom": "service mobile 31", "raison": "Francophone mais uniquement déblocage logiciel/FRP — pas de réparation matérielle.", "verifie": true },
-    { "nom": "Phone Repair Guru / TronicsFix", "raison": "Excellents mais en anglais — inutile vu l'offre FR existante.", "verifie": true }
+    {
+      "nom": "iProMx",
+      "raison": "Présentée par des agrégateurs comme chaîne FR de réparation → c'est une chaîne de gaming GTA 5.",
+      "verifie": true
+    },
+    {
+      "nom": "iDoctor UK",
+      "raison": "Titres auto-traduits en français par YouTube, mais la chaîne est anglophone.",
+      "verifie": true
+    },
+    {
+      "nom": "service mobile 31",
+      "raison": "Francophone mais uniquement déblocage logiciel/FRP — pas de réparation matérielle.",
+      "verifie": true
+    },
+    {
+      "nom": "Phone Repair Guru / TronicsFix",
+      "raison": "Excellents mais en anglais — inutile vu l'offre FR existante.",
+      "verifie": true
+    }
   ],
-
   "outils": {
     "budgetA": [
-      { "article": "iFixit Essential Electronics Toolkit", "role": "Kit de base : 16 embouts (Pentalobe/Tri-point), spatules, Jimmy, ventouse, pincette", "prix": "29,95 €", "fournisseur": "LDLC", "url": "https://www.ldlc.com/fiche/PB00464619.html", "verifie": true },
-      { "article": "Kit BEST BST-8930A (22 pièces)", "role": "Alternative économique au kit iFixit", "prix": "19,99 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/154672-kit-de-tournevis-de-precision-best-de-22-pieces.html", "verifie": true },
-      { "article": "iFixit iOpener Kit", "role": "Chauffe-écran réutilisable (micro-ondes) — ramollir l'adhésif", "prix": "22,90 €", "fournisseur": "MacWay", "url": "https://www.macway.com/ifixit-iopener-kit-kit-doutils-pour-la-reparation-dipad-iphone/p2782875", "verifie": true },
-      { "article": "Bracelet antistatique iFixit", "role": "Protection ESD — NON NÉGOCIABLE", "prix": "5,90 €", "fournisseur": "LDLC", "url": "https://www.ldlc.com/fiche/PB00464264.html", "verifie": true },
-      { "article": "Tapis magnétique iFixit", "role": "Tri des vis — évite la vis trop longue qui perce la carte mère", "prix": "19,95 €", "fournisseur": "LDLC", "url": "https://www.ldlc.com/fiche/PB00464383.html", "verifie": true },
-      { "article": "iFixit The Jimmy", "role": "Outil d'ouverture pour écrans collés", "prix": "7,90 €", "fournisseur": "LDLC", "url": "https://www.ldlc.com/fiche/PB00464240.html", "verifie": true },
-      { "article": "iFixit Spudgers (x3)", "role": "Spatules plastique", "prix": "7,90 €", "fournisseur": "LDLC", "url": "https://www.ldlc.com/fiche/PB00464262.html", "verifie": true },
-      { "article": "Ventouses renforcées", "role": "Ouverture d'écran", "prix": "24,95 €", "fournisseur": "LDLC", "url": "https://www.ldlc.com/fiche/PB00464367.html", "verifie": true },
-      { "article": "Flux BAKU BK-50 (50 g)", "role": "Flux de soudure", "prix": "8,99 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/156891-flux-de-soudure-en-pate-baku-bk-50-pot-de-50-grammes.html", "verifie": true },
-      { "article": "Outil diagnostic charge USB-C 2UUL PW21", "role": "Test de charge USB-C (iPhone 15)", "prix": "18,99 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/156189-outil-de-diagnostic-de-charge-usb-c-pw21-de-2uul.html", "verifie": true }
+      {
+        "article": "iFixit Essential Electronics Toolkit",
+        "role": "Kit de base : 16 embouts (Pentalobe/Tri-point), spatules, Jimmy, ventouse, pincette",
+        "prix": "29,95 €",
+        "fournisseur": "LDLC",
+        "url": "https://www.ldlc.com/fiche/PB00464619.html",
+        "verifie": true
+      },
+      {
+        "article": "Kit BEST BST-8930A (22 pièces)",
+        "role": "Alternative économique au kit iFixit",
+        "prix": "19,99 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/154672-kit-de-tournevis-de-precision-best-de-22-pieces.html",
+        "verifie": true
+      },
+      {
+        "article": "iFixit iOpener Kit",
+        "role": "Chauffe-écran réutilisable (micro-ondes) — ramollir l'adhésif",
+        "prix": "22,90 €",
+        "fournisseur": "MacWay",
+        "url": "https://www.macway.com/ifixit-iopener-kit-kit-doutils-pour-la-reparation-dipad-iphone/p2782875",
+        "verifie": true
+      },
+      {
+        "article": "Bracelet antistatique iFixit",
+        "role": "Protection ESD — NON NÉGOCIABLE",
+        "prix": "5,90 €",
+        "fournisseur": "LDLC",
+        "url": "https://www.ldlc.com/fiche/PB00464264.html",
+        "verifie": true
+      },
+      {
+        "article": "Tapis magnétique iFixit",
+        "role": "Tri des vis — évite la vis trop longue qui perce la carte mère",
+        "prix": "19,95 €",
+        "fournisseur": "LDLC",
+        "url": "https://www.ldlc.com/fiche/PB00464383.html",
+        "verifie": true
+      },
+      {
+        "article": "iFixit The Jimmy",
+        "role": "Outil d'ouverture pour écrans collés",
+        "prix": "7,90 €",
+        "fournisseur": "LDLC",
+        "url": "https://www.ldlc.com/fiche/PB00464240.html",
+        "verifie": true
+      },
+      {
+        "article": "iFixit Spudgers (x3)",
+        "role": "Spatules plastique",
+        "prix": "7,90 €",
+        "fournisseur": "LDLC",
+        "url": "https://www.ldlc.com/fiche/PB00464262.html",
+        "verifie": true
+      },
+      {
+        "article": "Ventouses renforcées",
+        "role": "Ouverture d'écran",
+        "prix": "24,95 €",
+        "fournisseur": "LDLC",
+        "url": "https://www.ldlc.com/fiche/PB00464367.html",
+        "verifie": true
+      },
+      {
+        "article": "Flux BAKU BK-50 (50 g)",
+        "role": "Flux de soudure",
+        "prix": "8,99 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/156891-flux-de-soudure-en-pate-baku-bk-50-pot-de-50-grammes.html",
+        "verifie": true
+      },
+      {
+        "article": "Outil diagnostic charge USB-C 2UUL PW21",
+        "role": "Test de charge USB-C (iPhone 15)",
+        "prix": "18,99 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/156189-outil-de-diagnostic-de-charge-usb-c-pw21-de-2uul.html",
+        "verifie": true
+      }
     ],
     "budgetB": [
-      { "article": "Station air chaud Quick 861DW (1000 W)", "role": "Référence atelier : 100-500 °C, 120 L/min, 3 canaux", "prix": "289,00 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/151166-station-de-soudure-a-air-chaud-quick-861dw.html", "verifie": true },
-      { "article": "Quick 8586D 2-en-1 (air chaud + fer)", "role": "Alternative combinée", "prix": "177,57 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/153360-station-de-soudure-quick-8586d-air-chaud-+-fer-a-souder.html", "verifie": true },
-      { "article": "Kailiwei 8586D 2-en-1", "role": "Entrée de gamme air chaud + fer", "prix": "129,99 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/153361-station-de-soudure-kailiwei-8586d-air-chaud-+-fer-a-souder.html", "verifie": true },
-      { "article": "Alimentation stabilisée Sugon 3005D (30 V/5 A)", "role": "Diagnostic de cartes, alimentation contrôlée", "prix": "119,00 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/155177-alimentation-stabilisee-30v---5a-sugon-3005d.html", "verifie": true },
-      { "article": "Pâte à souder Relife 138 °C (50 g)", "role": "Micro-soudure CMS basse température", "prix": "15,99 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/154654-pate-a-souder-relife-en-pot-50-grammes-basse-temperature-138-degres-air-chaud-microsoudure-cms.html", "verifie": true },
-      { "article": "Étau de serrage Qianli (lot de 4)", "role": "Maintien pour collage d'écran", "prix": "12,00 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/155800-qianli-lot-de-4-etaux-de-serrage-pour-collage-ecran-smartphone-tablette.html", "verifie": true },
-      { "article": "Programmateur JCID V1SE-WIFI", "role": "Reprogrammation TrueTone (iPhone)", "prix": "129,99 €", "fournisseur": "Kabiloo", "url": "https://www.kabiloo.fr/articles/153558-jc-programmer-jcid-v1se-wifi-pour-reprogrammation-truetone.html", "verifie": true }
+      {
+        "article": "Station air chaud Quick 861DW (1000 W)",
+        "role": "Référence atelier : 100-500 °C, 120 L/min, 3 canaux",
+        "prix": "289,00 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/151166-station-de-soudure-a-air-chaud-quick-861dw.html",
+        "verifie": true
+      },
+      {
+        "article": "Quick 8586D 2-en-1 (air chaud + fer)",
+        "role": "Alternative combinée",
+        "prix": "177,57 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/153360-station-de-soudure-quick-8586d-air-chaud-+-fer-a-souder.html",
+        "verifie": true
+      },
+      {
+        "article": "Kailiwei 8586D 2-en-1",
+        "role": "Entrée de gamme air chaud + fer",
+        "prix": "129,99 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/153361-station-de-soudure-kailiwei-8586d-air-chaud-+-fer-a-souder.html",
+        "verifie": true
+      },
+      {
+        "article": "Alimentation stabilisée Sugon 3005D (30 V/5 A)",
+        "role": "Diagnostic de cartes, alimentation contrôlée",
+        "prix": "119,00 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/155177-alimentation-stabilisee-30v---5a-sugon-3005d.html",
+        "verifie": true
+      },
+      {
+        "article": "Pâte à souder Relife 138 °C (50 g)",
+        "role": "Micro-soudure CMS basse température",
+        "prix": "15,99 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/154654-pate-a-souder-relife-en-pot-50-grammes-basse-temperature-138-degres-air-chaud-microsoudure-cms.html",
+        "verifie": true
+      },
+      {
+        "article": "Étau de serrage Qianli (lot de 4)",
+        "role": "Maintien pour collage d'écran",
+        "prix": "12,00 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/155800-qianli-lot-de-4-etaux-de-serrage-pour-collage-ecran-smartphone-tablette.html",
+        "verifie": true
+      },
+      {
+        "article": "Programmateur JCID V1SE-WIFI",
+        "role": "Reprogrammation TrueTone (iPhone)",
+        "prix": "129,99 €",
+        "fournisseur": "Kabiloo",
+        "url": "https://www.kabiloo.fr/articles/153558-jc-programmer-jcid-v1se-wifi-pour-reprogrammation-truetone.html",
+        "verifie": true
+      }
     ],
     "pieces": [
-      { "qualite": "Incell HD LCD (standard)", "prix": "30,90 €", "note": "Le moins cher, contraste moyen" },
-      { "qualite": "LTPS FHD (améliorée)", "prix": "34,90 €", "note": "Bon rapport qualité/prix" },
-      { "qualite": "Hard OLED", "prix": "59,90 €", "note": "" },
-      { "qualite": "Soft OLED", "prix": "69,90 €", "note": "Souple, meilleur rendu" },
-      { "qualite": "Soft OLED sans message d'erreur", "prix": "79,90 €", "note": "Évite l'alerte iOS « pièce inconnue »" },
-      { "qualite": "OLED Original Apple Reconditionné", "prix": "99,90 €", "note": "" },
-      { "qualite": "OLED Original Apple Service Pack", "prix": "159,90 €", "note": "Qualité constructeur" }
+      {
+        "qualite": "Incell HD LCD (standard)",
+        "prix": "30,90 €",
+        "note": "Le moins cher, contraste moyen"
+      },
+      {
+        "qualite": "LTPS FHD (améliorée)",
+        "prix": "34,90 €",
+        "note": "Bon rapport qualité/prix"
+      },
+      {
+        "qualite": "Hard OLED",
+        "prix": "59,90 €",
+        "note": ""
+      },
+      {
+        "qualite": "Soft OLED",
+        "prix": "69,90 €",
+        "note": "Souple, meilleur rendu"
+      },
+      {
+        "qualite": "Soft OLED sans message d'erreur",
+        "prix": "79,90 €",
+        "note": "Évite l'alerte iOS « pièce inconnue »"
+      },
+      {
+        "qualite": "OLED Original Apple Reconditionné",
+        "prix": "99,90 €",
+        "note": ""
+      },
+      {
+        "qualite": "OLED Original Apple Service Pack",
+        "prix": "159,90 €",
+        "note": "Qualité constructeur"
+      }
     ],
     "fournisseurs": [
-      { "nom": "world-itech.com", "zone": "France", "fiabilite": "Avis Vérifiés 4,5/5 sur 6 899 avis depuis 2016 — la meilleure preuve collectée" },
-      { "nom": "LDLC / Materiel.net", "zone": "France", "fiabilite": "Distributeur iFixit officiel, fiable" },
-      { "nom": "iFixShop.fr", "zone": "France", "fiabilite": "Livraison gratuite FR, FranceVerif « fiable » — bon pour les écrans et batteries" },
-      { "nom": "Kabiloo", "zone": "France", "fiabilite": "⚠️ CONTRADICTION : Trustpilot 2,5/5 « Poor » mais catalogue et prix excellents → payer en paiement protégé" },
-      { "nom": "MobileSentrix Europe", "zone": "UE (Pays-Bas)", "fiabilite": "95/100 Gridinsoft (agrégateur, pas Trustpilot)" },
-      { "nom": "REWA", "zone": "Chine", "fiabilite": "4,9/5 sur 59 avis (agrégateur)" },
-      { "nom": "iFixit", "zone": "UE", "fiabilite": "Qualité garantie 25 ans, prix plus élevés — idéal pour apprendre avec de la pièce fiable" }
+      {
+        "nom": "world-itech.com",
+        "zone": "France",
+        "type": "Pièces + outils",
+        "url": "https://www.world-itech.com",
+        "fiabilite": "⭐ Avis Vérifiés 4,5/5 sur 6 899 avis depuis 2016 (1 214 avis sur 12 mois, 82 % de 5 étoiles) — la meilleure preuve collectée",
+        "verifie": true
+      },
+      {
+        "nom": "LDLC / Materiel.net",
+        "zone": "France",
+        "type": "Outils + Apple Original",
+        "url": "https://www.ldlc.com",
+        "fiabilite": "Distributeur iFixit officiel. Vend aussi de l'écran Apple Original pour iPhone 13 — la source la plus sûre pour de la pièce constructeur",
+        "verifie": true
+      },
+      {
+        "nom": "iFixShop.fr",
+        "zone": "France",
+        "type": "Pièces (écrans, batteries)",
+        "url": "https://www.ifixshop.fr",
+        "fiabilite": "FranceVerif « fiable » sur 127 critères. Bonne échelle de qualité d'écrans, prix vérifiés via l'API Shopify",
+        "verifie": true
+      },
+      {
+        "nom": "APEX Technology GmbH",
+        "zone": "UE (Autriche)",
+        "type": "Grossiste B2B",
+        "url": "https://apexgsm.com/wholesale/",
+        "fiabilite": "⚠️ Grossiste pro (350 réf. Apple, stock UE sans douane). MAIS 2 contradictions sur leur site : ils écrivent « nous ne proposons pas de garantie » puis « tous les composants sont couverts par une garantie wholesale ». Minimum de commande 500 €. Paiement par virement — pas de protection acheteur",
+        "verifie": true
+      },
+      {
+        "nom": "Kabiloo",
+        "zone": "France",
+        "type": "Outils",
+        "url": "https://www.kabiloo.fr",
+        "fiabilite": "⚠️ CONTRADICTION : Trustpilot 2,5/5 « Poor » mais catalogue et prix excellents → payer en paiement protégé (carte, pas virement)",
+        "verifie": true
+      },
+      {
+        "nom": "iFixit",
+        "zone": "UE",
+        "type": "Outils + pièces",
+        "url": "https://fr.ifixit.com/Store",
+        "fiabilite": "Qualité garantie 25 ans, prix plus élevés — idéal pour apprendre avec de la pièce fiable",
+        "verifie": true
+      },
+      {
+        "nom": "MobileSentrix Europe",
+        "zone": "UE (Pays-Bas)",
+        "type": "Grossiste pièces",
+        "url": "https://www.mobilesentrix.eu",
+        "fiabilite": "95/100 Gridinsoft (agrégateur, pas Trustpilot) — avis direct non vérifié",
+        "verifie": "partiel"
+      },
+      {
+        "nom": "REWA Technology",
+        "zone": "Chine",
+        "type": "Pièces + outils + tutos",
+        "url": "https://rewa.tech",
+        "fiabilite": "4,9/5 sur 59 avis (agrégateur). Énorme bibliothèque de vidéos techniques gratuites",
+        "verifie": "partiel"
+      },
+      {
+        "nom": "Pieces2Mobile",
+        "zone": "France",
+        "type": "Pièces",
+        "url": "https://www.pieces2mobile.com",
+        "fiabilite": "Trustpilot 3/5 « Moyen » — site actif",
+        "verifie": "partiel"
+      },
+      {
+        "nom": "Mobilax",
+        "zone": "France",
+        "type": "Pièces",
+        "url": "https://www.mobilax.fr",
+        "fiabilite": "Trustpilot 2,9/5 « Moyen » — site actif mais avis mitigés",
+        "verifie": "partiel"
+      }
+    ],
+    "fournisseursMorts": [
+      {
+        "nom": "PiecesPourPhone.fr",
+        "raison": "❌ DOMAINE MORT — le DNS ne résout plus du tout (testé : erreur 000, aucune résolution). Ne pas commander. Avis Trustpilot déjà divergents de son vivant (4,4/5 FR mais 3,3/5 sur les versions UK/PL)."
+      },
+      {
+        "nom": "Tout-pour-Phone (site)",
+        "raison": "⚠️ Le site renvoie 403 aux requêtes automatisées depuis notre environnement. La chaîne YouTube, elle, fonctionne normalement. Site probablement protégé par anti-bot, à tester dans un navigateur."
+      }
+    ],
+    "ouAcheterQuoi": [
+      {
+        "besoin": "Écran Apple Original (qualité constructeur)",
+        "ou": "LDLC — vend officiellement de l'Apple Original pour iPhone 13 et 15 Pro",
+        "conseil": "Le plus sûr, mais le plus cher. Réservez-le aux clients exigeants."
+      },
+      {
+        "besoin": "Écran compatible bon rapport qualité/prix",
+        "ou": "iFixShop.fr",
+        "conseil": "Choisissez Soft OLED ou « sans message d'erreur » pour éviter l'alerte iOS."
+      },
+      {
+        "besoin": "Batterie avec puce TI",
+        "ou": "iFixShop.fr ou world-itech.com",
+        "conseil": "Vérifiez explicitement la présence de la puce TI, sinon pas d'affichage de santé."
+      },
+      {
+        "besoin": "Outillage fiable (tournevis, pinces)",
+        "ou": "LDLC (iFixit officiel) ou iFixit directement",
+        "conseil": "Ne pas lésiner : une vis foirée coûte plus cher que le bon tournevis."
+      },
+      {
+        "besoin": "Outillage moins cher (stations, flux)",
+        "ou": "Kabiloo",
+        "conseil": "⚠️ Payez par carte pour garder la protection acheteur (Trustpilot 2,5/5)."
+      },
+      {
+        "besoin": "Volume pro (lot de 50 écrans)",
+        "ou": "APEX Technology (Autriche, min. 500 €)",
+        "conseil": "⚠️ Virement uniquement = aucune protection. À réserver quand vous aurez un vrai volume."
+      }
     ],
     "pieges": [
       "Kits à 8 € à 20 embouts : acier mou, foire les vis Pentalobe. Une vis foirée sur iPhone = 2 h de galère.",
@@ -496,37 +837,195 @@
       "Alimentations en norme US 110 V (ex. YCS 3310 à 782 €) : inutilisables en France sans transformateur.",
       "Acheter tout le matériel pro d'entrée : beaucoup d'apprentis achètent 2 000 € et abandonnent en 3 mois.",
       "Téléphone verrouillé iCloud sans facture : REFUSE. C'est le piège légal n°1 du métier (recel).",
-      "Remettre sous tension un iPhone mouillé avant nettoyage : transforme une réparation à 30 € en carte mère morte."
+      "Remettre sous tension un iPhone mouillé avant nettoyage : transforme une réparation à 30 € en carte mère morte.",
+      "Payer par virement bancaire chez un fournisseur inconnu : aucun recours en cas de litige. Privilégie la carte bancaire, qui offre une protection acheteur.",
+      "Commander chez PiecesPourPhone.fr : le domaine est MORT (le DNS ne résout plus). Vérifie toujours qu'un site répond avant de commander.",
+      "Se fier aux notes agrégées (Gridinsoft, RatingFacts) comme si c'était Trustpilot : ce sont des scores algorithmiques, pas des avis clients réels. Cherche la source primaire."
     ]
   },
-
   "plan8Semaines": [
-    { "semaine": 1, "titre": "Théorie + achat du matériel", "objectif": "Comprendre, s'équiper, ne rien casser.", "actions": ["Lire l'ebook Cursa « Maintenance complète du smartphone »", "Regarder les vidéos de diagnostic et de matériel", "Commander le Budget A (~120-170 €)", "Monter un poste de travail éclairé avec tapis magnétique"], "livrable": "Poste de travail opérationnel" },
-    { "semaine": 2, "titre": "Démontage exploratoire", "objectif": "Ouvrir et refermer sans rien casser.", "actions": ["Lire 3 tutos iFixit FR de ton modèle", "Démonter/remonter 3 fois un iPhone mort", "Chronométrer et noter chaque difficulté"], "livrable": "Remontage fonctionnel chronométré" },
-    { "semaine": 3, "titre": "Écran + batterie sur iPhone d'entraînement", "objectif": "Les deux réparations les plus rentables.", "actions": ["Guide iFixit FR écran iPhone 13", "Guide iFixit FR batterie iPhone 13", "Vidéos Bricophone correspondantes", "⚠️ Lire d'abord l'article Face ID"], "livrable": "1 écran + 1 batterie changés" },
-    { "semaine": 4, "titre": "iPhone 14/15 — mécanique récente", "objectif": "Maîtriser l'accès par l'arrière des modèles récents.", "actions": ["Guide batterie iPhone 14 et 15", "Guide écran iPhone 14 et démontage iPhone 15", "Comparer avec la mécanique iPhone 13"], "livrable": "1 réparation sur modèle récent" },
-    { "semaine": 5, "titre": "Connecteur de charge + diagnostic", "objectif": "La panne n°3 et apprendre à diagnostiquer.", "actions": ["Vidéo connecteur de charge iPhone 13", "Guide connecteur Lightning iPhone 11", "Nettoyer un port : gratter les peluches compactées AVANT de démonter"], "livrable": "1 connecteur + 2 diagnostics documentés" },
-    { "semaine": 6, "titre": "Caméras, haut-parleur, châssis", "objectif": "Compléter la panoplie du niveau 1.", "actions": ["Vidéo caméras iPhone 13 et iPhone 15 Pro", "Guide vitre arrière iPhone 14", "Guide caméras iPhone 11 et 12"], "livrable": "2 réparations annexes" },
-    { "semaine": 7, "titre": "Dégâts d'eau + logiciel", "objectif": "Les cas qui font la réputation d'un réparateur.", "actions": ["Article déssoxydation DigiRepair", "Article nettoyer une carte mère (The Repair Academy)", "Modes DFU / Recovery, outil 3uTools", "⚠️ Ne JAMAIS remettre sous tension un appareil mouillé avant nettoyage"], "livrable": "1 dossier de récupération dégât d'eau" },
-    { "semaine": 8, "titre": "Bilan + entrée en micro-soudure", "objectif": "Consolider et préparer le niveau 2.", "actions": ["Relire ses fiches, calculer son temps moyen, fixer sa grille tarifaire", "Commencer le cours Cursa 11 h 40 (modules 1 et 2)", "Vidéo « analyser le courant » + article courts-circuits", "Acheter des cartes mères HS pour s'entraîner à dessouder"], "livrable": "Grille tarifaire + 5 cartes d'entraînement" }
+    {
+      "semaine": 1,
+      "titre": "Théorie + achat du matériel",
+      "objectif": "Comprendre, s'équiper, ne rien casser.",
+      "actions": [
+        "Lire l'ebook Cursa « Maintenance complète du smartphone »",
+        "Regarder les vidéos de diagnostic et de matériel",
+        "Commander le Budget A (~120-170 €)",
+        "Monter un poste de travail éclairé avec tapis magnétique"
+      ],
+      "livrable": "Poste de travail opérationnel"
+    },
+    {
+      "semaine": 2,
+      "titre": "Démontage exploratoire",
+      "objectif": "Ouvrir et refermer sans rien casser.",
+      "actions": [
+        "Lire 3 tutos iFixit FR de ton modèle",
+        "Démonter/remonter 3 fois un iPhone mort",
+        "Chronométrer et noter chaque difficulté"
+      ],
+      "livrable": "Remontage fonctionnel chronométré"
+    },
+    {
+      "semaine": 3,
+      "titre": "Écran + batterie sur iPhone d'entraînement",
+      "objectif": "Les deux réparations les plus rentables.",
+      "actions": [
+        "Guide iFixit FR écran iPhone 13",
+        "Guide iFixit FR batterie iPhone 13",
+        "Vidéos Bricophone correspondantes",
+        "⚠️ Lire d'abord l'article Face ID"
+      ],
+      "livrable": "1 écran + 1 batterie changés"
+    },
+    {
+      "semaine": 4,
+      "titre": "iPhone 14/15 — mécanique récente",
+      "objectif": "Maîtriser l'accès par l'arrière des modèles récents.",
+      "actions": [
+        "Guide batterie iPhone 14 et 15",
+        "Guide écran iPhone 14 et démontage iPhone 15",
+        "Comparer avec la mécanique iPhone 13"
+      ],
+      "livrable": "1 réparation sur modèle récent"
+    },
+    {
+      "semaine": 5,
+      "titre": "Connecteur de charge + diagnostic",
+      "objectif": "La panne n°3 et apprendre à diagnostiquer.",
+      "actions": [
+        "Vidéo connecteur de charge iPhone 13",
+        "Guide connecteur Lightning iPhone 11",
+        "Nettoyer un port : gratter les peluches compactées AVANT de démonter"
+      ],
+      "livrable": "1 connecteur + 2 diagnostics documentés"
+    },
+    {
+      "semaine": 6,
+      "titre": "Caméras, haut-parleur, châssis",
+      "objectif": "Compléter la panoplie du niveau 1.",
+      "actions": [
+        "Vidéo caméras iPhone 13 et iPhone 15 Pro",
+        "Guide vitre arrière iPhone 14",
+        "Guide caméras iPhone 11 et 12"
+      ],
+      "livrable": "2 réparations annexes"
+    },
+    {
+      "semaine": 7,
+      "titre": "Dégâts d'eau + logiciel",
+      "objectif": "Les cas qui font la réputation d'un réparateur.",
+      "actions": [
+        "Article déssoxydation DigiRepair",
+        "Article nettoyer une carte mère (The Repair Academy)",
+        "Modes DFU / Recovery, outil 3uTools",
+        "⚠️ Ne JAMAIS remettre sous tension un appareil mouillé avant nettoyage"
+      ],
+      "livrable": "1 dossier de récupération dégât d'eau"
+    },
+    {
+      "semaine": 8,
+      "titre": "Bilan + entrée en micro-soudure",
+      "objectif": "Consolider et préparer le niveau 2.",
+      "actions": [
+        "Relire ses fiches, calculer son temps moyen, fixer sa grille tarifaire",
+        "Commencer le cours Cursa 11 h 40 (modules 1 et 2)",
+        "Vidéo « analyser le courant » + article courts-circuits",
+        "Acheter des cartes mères HS pour s'entraîner à dessouder"
+      ],
+      "livrable": "Grille tarifaire + 5 cartes d'entraînement"
+    }
   ],
-
   "ressourcesAnnexes": [
-    { "titre": "iFixit FR — Tous les tutoriels", "type": "Base de guides", "langue": "FR", "url": "https://fr.ifixit.com/Tutoriel", "note": 5, "pourquoi": "La référence mondiale, gratuite, sans inscription, en français. Un guide par modèle et par pièce.", "verifie": true },
-    { "titre": "iFixit FR — Tous les iPhone", "type": "Index", "langue": "FR", "url": "https://fr.ifixit.com/Device/iPhone", "note": 5, "pourquoi": "Point d'entrée pour trouver ton modèle exact.", "verifie": true },
-    { "titre": "Cursa — Cours d'entretien smartphone", "type": "Cours", "langue": "FR", "url": "https://cursa.app/cours-gratuits-entretien-smartphone-online", "note": 4, "pourquoi": "Catalogue de cours vidéo FR gratuits. Contrainte : appli mobile requise.", "verifie": true },
-    { "titre": "The Repair Academy — Blog technique", "type": "Articles", "langue": "FR", "url": "https://therepairacademy.com/blog/", "note": 5, "pourquoi": "La meilleure ressource FR écrite en micro-soudure. Vérifié article par article.", "verifie": true },
-    { "titre": "La Rebooterie (Toulouse) — Atelier auto-réparation", "type": "Atelier présentiel", "langue": "FR", "url": "https://larebooterie.fr/auto-reparation/", "note": 5, "pourquoi": "100 % gratuit, SANS inscription, outillage pro fourni. Mercredis 14 h-18 h. Le complément pratique idéal.", "verifie": true },
-    { "titre": "Repair Café — Réseau national", "type": "Ateliers présentiels", "langue": "FR", "url": "https://www.repaircafe.org/fr/", "note": 4.5, "pourquoi": "Des milliers d'ateliers citoyens gratuits partout en France. ⚠️ Le site bloque les requêtes automatisées (403) mais fonctionne dans un navigateur.", "verifie": "partiel" },
-    { "titre": "Skool The Repair Academy", "type": "Communauté", "langue": "FR", "url": "https://www.skool.com/the-repair-academy-fr/about", "note": 2.5, "pourquoi": "⚠️ FREEMIUM : palier gratuit réel mais limité. Formation à 39 $/mois. Pas une arnaque, mais pas gratuit non plus.", "verifie": true }
+    {
+      "titre": "iFixit FR — Tous les tutoriels",
+      "type": "Base de guides",
+      "langue": "FR",
+      "url": "https://fr.ifixit.com/Tutoriel",
+      "note": 5,
+      "pourquoi": "La référence mondiale, gratuite, sans inscription, en français. Un guide par modèle et par pièce.",
+      "verifie": true
+    },
+    {
+      "titre": "iFixit FR — Tous les iPhone",
+      "type": "Index",
+      "langue": "FR",
+      "url": "https://fr.ifixit.com/Device/iPhone",
+      "note": 5,
+      "pourquoi": "Point d'entrée pour trouver ton modèle exact.",
+      "verifie": true
+    },
+    {
+      "titre": "Cursa — Cours d'entretien smartphone",
+      "type": "Cours",
+      "langue": "FR",
+      "url": "https://cursa.app/cours-gratuits-entretien-smartphone-online",
+      "note": 4,
+      "pourquoi": "Catalogue de cours vidéo FR gratuits. Contrainte : appli mobile requise.",
+      "verifie": true
+    },
+    {
+      "titre": "The Repair Academy — Blog technique",
+      "type": "Articles",
+      "langue": "FR",
+      "url": "https://therepairacademy.com/blog/",
+      "note": 5,
+      "pourquoi": "La meilleure ressource FR écrite en micro-soudure. Vérifié article par article.",
+      "verifie": true
+    },
+    {
+      "titre": "La Rebooterie (Toulouse) — Atelier auto-réparation",
+      "type": "Atelier présentiel",
+      "langue": "FR",
+      "url": "https://larebooterie.fr/auto-reparation/",
+      "note": 5,
+      "pourquoi": "100 % gratuit, SANS inscription, outillage pro fourni. Mercredis 14 h-18 h. Le complément pratique idéal.",
+      "verifie": true
+    },
+    {
+      "titre": "Repair Café — Réseau national",
+      "type": "Ateliers présentiels",
+      "langue": "FR",
+      "url": "https://www.repaircafe.org/fr/",
+      "note": 4.5,
+      "pourquoi": "Des milliers d'ateliers citoyens gratuits partout en France. ⚠️ Le site bloque les requêtes automatisées (403) mais fonctionne dans un navigateur.",
+      "verifie": "partiel"
+    },
+    {
+      "titre": "Skool The Repair Academy",
+      "type": "Communauté",
+      "langue": "FR",
+      "url": "https://www.skool.com/the-repair-academy-fr/about",
+      "note": 2.5,
+      "pourquoi": "⚠️ FREEMIUM : palier gratuit réel mais limité. Formation à 39 $/mois. Pas une arnaque, mais pas gratuit non plus.",
+      "verifie": true
+    }
   ],
-
   "avertissements": [
-    { "titre": "Débrancher la batterie AVANT de toucher aux nappes d'écran", "texte": "80 % des débutants grillent le rétroéclairage ou la nappe écran en débranchant l'écran alors que la batterie est encore connectée." },
-    { "titre": "Décharge électrostatique (ESD)", "texte": "Bracelet antistatique + tapis. Une décharge invisible tue un composant sans laisser aucune trace." },
-    { "titre": "Ne jamais chauffer une batterie lithium directement", "texte": "Risque d'emballement thermique et d'incendie. Chauffe le pourtour de l'écran ou l'adhésif du châssis, jamais la batterie." },
-    { "titre": "Face ID est irréparable s'il est abîmé", "texte": "Le capteur de proximité et le module Face ID sont appairés à la carte mère. Une nappe déchirée = Face ID perdu définitivement. Lis l'article dédié avant ton premier écran d'iPhone." },
-    { "titre": "Une vis = un emplacement", "texte": "Les vis ont des longueurs différentes. Une vis longue dans un trou court perce la carte mère. Utilise un aimant quadrillé ou une feuille avec des cases numérotées." },
-    { "titre": "Refuse les appareils verrouillés iCloud sans facture", "texte": "C'est le piège légal n°1 du métier. Un iPhone verrouillé sans preuve d'achat peut être volé — tu t'exposes au recel." }
+    {
+      "titre": "Débrancher la batterie AVANT de toucher aux nappes d'écran",
+      "texte": "80 % des débutants grillent le rétroéclairage ou la nappe écran en débranchant l'écran alors que la batterie est encore connectée."
+    },
+    {
+      "titre": "Décharge électrostatique (ESD)",
+      "texte": "Bracelet antistatique + tapis. Une décharge invisible tue un composant sans laisser aucune trace."
+    },
+    {
+      "titre": "Ne jamais chauffer une batterie lithium directement",
+      "texte": "Risque d'emballement thermique et d'incendie. Chauffe le pourtour de l'écran ou l'adhésif du châssis, jamais la batterie."
+    },
+    {
+      "titre": "Face ID est irréparable s'il est abîmé",
+      "texte": "Le capteur de proximité et le module Face ID sont appairés à la carte mère. Une nappe déchirée = Face ID perdu définitivement. Lis l'article dédié avant ton premier écran d'iPhone."
+    },
+    {
+      "titre": "Une vis = un emplacement",
+      "texte": "Les vis ont des longueurs différentes. Une vis longue dans un trou court perce la carte mère. Utilise un aimant quadrillé ou une feuille avec des cases numérotées."
+    },
+    {
+      "titre": "Refuse les appareils verrouillés iCloud sans facture",
+      "texte": "C'est le piège légal n°1 du métier. Un iPhone verrouillé sans preuve d'achat peut être volé — tu t'exposes au recel."
+    }
   ]
 }

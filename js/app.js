@@ -216,12 +216,31 @@ function rendreOutils() {
   const cF = $('#fournisseurs');
   if (cF) cF.innerHTML = `
     <div class="table-wrap"><table>
-      <thead><tr><th>Fournisseur</th><th>Zone</th><th>Fiabilité</th></tr></thead>
+      <thead><tr><th>Fournisseur</th><th>Zone</th><th>Type</th><th>Fiabilité</th></tr></thead>
       <tbody>${o.fournisseurs.map(f => `
-        <tr><td><strong>${esc(f.nom)}</strong></td>
-            <td class="zone">${esc(f.zone)}</td>
-            <td>${esc(f.fiabilite)}</td></tr>`).join('')}</tbody>
+        <tr>
+          <td><a href="${esc(f.url)}" target="_blank" rel="noopener"><strong>${esc(f.nom)}</strong></a>
+            ${f.verifie === true ? '<br><span class="verif">✓ vérifié</span>' : '<br><span class="verif partiel">◐ partiel</span>'}</td>
+          <td class="zone">${esc(f.zone)}</td>
+          <td class="zone">${esc(f.type || '')}</td>
+          <td>${esc(f.fiabilite)}</td>
+        </tr>`).join('')}</tbody>
     </table></div>`;
+
+  const cOA = $('#ou-acheter-conteneur');
+  if (cOA) cOA.innerHTML = `
+    <div class="table-wrap"><table>
+      <thead><tr><th>Besoin</th><th>Où</th><th>Conseil</th></tr></thead>
+      <tbody>${o.ouAcheterQuoi.map(x => `
+        <tr><td><strong>${esc(x.besoin)}</strong></td>
+            <td>${esc(x.ou)}</td>
+            <td>${esc(x.conseil)}</td></tr>`).join('')}</tbody>
+    </table></div>`;
+
+  const cFM = $('#fournisseurs-morts');
+  if (cFM) cFM.innerHTML = o.fournisseursMorts.map(f => `
+    <div class="alert"><span class="ico">🚫</span>
+      <div><h4>${esc(f.nom)}</h4><p>${esc(f.raison)}</p></div></div>`).join('');
 
   const cPi = $('#pieges');
   if (cPi) cPi.innerHTML = o.pieges.map(p => `
