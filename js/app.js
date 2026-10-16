@@ -390,6 +390,38 @@ function rendreCataloguePrix() {
       </table></div>`;
   }
 
+  // --- Comparaison multi-fournisseurs ---
+  const cm = cat.comparaisonMulti;
+  if (cm) {
+    const rendre = (id, lignes) => {
+      const el = $(id);
+      if (!el) return;
+      const fmt = (v, ht) => v === null || v === undefined
+        ? '<span class="muted">—</span>'
+        : `<span class="prix">${v.toFixed(2)} €</span>${ht ? '<br><span class="zone" style="font-size:.72rem">HT</span>' : ''}`;
+      el.innerHTML = `
+        <div class="table-wrap"><table>
+          <thead><tr>
+            <th>Pièce</th>
+            <th>iFixShop<br><span style="font-weight:400;text-transform:none">TTC</span></th>
+            <th>world-itech<br><span style="font-weight:400;text-transform:none">TTC</span></th>
+            <th>Pieces2Mobile<br><span style="font-weight:400;text-transform:none">HT</span></th>
+            <th>MobileSentrix<br><span style="font-weight:400;text-transform:none">HT</span></th>
+          </tr></thead>
+          <tbody>${lignes.map(l => `
+            <tr>
+              <td><strong>${esc(l.piece)}</strong></td>
+              <td>${fmt(l.iFixShop, false)}</td>
+              <td>${fmt(l.worldItech, false)}</td>
+              <td>${fmt(l.pieces2mobileHT, true)}</td>
+              <td>${fmt(l.mobileSentrixHT, true)}</td>
+            </tr>`).join('')}</tbody>
+        </table></div>`;
+    };
+    rendre('#comparaison-multi-13', cm.iphone13);
+    rendre('#comparaison-multi-11', cm.iphone11);
+  }
+
   // --- Comparaison Apple Original ---
   const cA = $('#comparaison-apple');
   if (cA) {
