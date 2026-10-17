@@ -1,6 +1,5 @@
 {
   "dateVerification": "Vérifié sur service-public.gouv.fr, moncompteformation.gouv.fr et francecompetences.fr",
-
   "reglesCles": [
     {
       "icone": "⚠️",
@@ -24,7 +23,6 @@
       "sourceNom": "France Compétences"
     }
   ],
-
   "certifications": [
     {
       "code": "RNCP41732",
@@ -62,9 +60,32 @@
       "plafondRS": true,
       "url": "https://www.francecompetences.fr/recherche/rs/6375/",
       "note": "🚨 ATTENTION — Cette certification est INACTIVE depuis le 20/09/2026. The Repair Academy continue pourtant d'afficher sa formation à 4 500 € comme « éligible CPF ». Le CPF ne finance plus une certification inactive. À vérifier impérativement sur Mon Compte Formation avant toute inscription."
+    },
+    {
+      "code": "RNCP37416",
+      "titre": "Réparateur de produits nomades",
+      "etat": "Inactive",
+      "echeance": "27-03-2026",
+      "niveau": "Niveau 4",
+      "certificateur": "⚠️ Remplacé par RNCP41732",
+      "cpf": false,
+      "plafondRS": false,
+      "url": "https://www.francecompetences.fr/recherche/rncp/37416",
+      "note": "🚨 PIÈGE : beaucoup de sites citent encore ce code. Il est INACTIF depuis le 27/03/2026. Si un organisme vous propose le « RNCP37416 », c'est un ancien titre remplacé par RNCP41732 — vérifiez lequel est réellement délivré."
+    },
+    {
+      "code": "RS7269",
+      "titre": "Diagnostiquer et reconditionner les smartphones",
+      "etat": "Active",
+      "echeance": "24-09-2028",
+      "niveau": "RS",
+      "certificateur": "Activité vérifiée",
+      "cpf": true,
+      "plafondRS": true,
+      "url": "https://www.francecompetences.fr/recherche/rs/7269/",
+      "note": "✅ L'alternative ACTIVE à RS6375 pour le reconditionnement. Attention : c'est une certification RS, donc plafonnée à 1 500 € par le CPF."
     }
   ],
-
   "simulateur": {
     "titre": "Le vrai reste à charge",
     "intro": "Trois scénarios réels, calculés avec les règles de 2026. Le « 100 % CPF » n'existe quasiment plus.",
@@ -95,10 +116,9 @@
       }
     ]
   },
-
   "formations": [
     {
-      "organisme": "The Repair Academy",
+      "organisme": "Organisme Qualiopi, transparent sur ses prix et ses résultats. Leur page financement est la plus honnête du secteur — elle cite les décrets et signale elle-même que la RS est inactive.",
       "lieu": "Toulouse · Paris",
       "intitule": "Formation certifiante microsoudure (RS6375)",
       "certification": "RS6375 — ⚠️ INACTIVE",
@@ -111,13 +131,12 @@
       "s2": "Organisme",
       "s3": "CPF aujourd'hui",
       "pedagogie": "Le contenu est sérieux et techniquement excellent. Résultats publiés : 94,26 % de réussite à la certification (115 certifiés sur 122), 9,31/10 de satisfaction. Qualiopi.",
-      "organisme": "Organisme Qualiopi, transparent sur ses prix et ses résultats. Leur page financement est la plus honnête du secteur — elle cite les décrets et signale elle-même que la RS est inactive.",
       "cpf": "⚠️ Plus finançable : certification inactive depuis le 20/09/2026. À 4 500 €, vous payer publiquement de votre poche (sauf autre financier : OPCO, AGEFICE, France Travail).",
       "recommande": false,
       "alerte": true
     },
     {
-      "organisme": "The Repair Academy",
+      "organisme": "Sérieux, mais NON certifiante → pas de CPF possible. À 1 950 € pour du contenu que vous pouvez apprendre gratuitement (voir notre plan 8 semaines), c'est difficile à justifier en autodidacte.",
       "lieu": "Toulouse",
       "intitule": "Formation réparation smartphone débutant",
       "certification": "Aucune (non certifiante)",
@@ -129,13 +148,12 @@
       "s2": "Verdict",
       "s3": "",
       "pedagogie": "Diagnostic, écran, batterie, connecteur de charge, logiciels 3uTools et NSYS. Un poste équipé par élève. 9/10 de satisfaction.",
-      "organisme": "Sérieux, mais NON certifiante → pas de CPF possible. À 1 950 € pour du contenu que vous pouvez apprendre gratuitement (voir notre plan 8 semaines), c'est difficile à justifier en autodidacte.",
       "cpf": "",
       "recommande": false,
       "alerte": false
     },
     {
-      "organisme": "Réseau Ducretet",
+      "organisme": "Plus large que le smartphone (électroménager, audiovisuel). Intéressant si vous voulez une base polyvalente.",
       "lieu": "Multi-sites France",
       "intitule": "Réparateur conseil d'équipements électriques et électroniques",
       "certification": "RNCP42306 — ✅ ACTIVE",
@@ -147,13 +165,12 @@
       "s2": "Limite",
       "s3": "",
       "pedagogie": "Le meilleur rapport qualité/prix : formation GRATUITE en alternance, ET rémunérée. Titre RNCP actif, reconnu.",
-      "organisme": "Plus large que le smartphone (électroménager, audiovisuel). Intéressant si vous voulez une base polyvalente.",
       "cpf": "",
       "recommande": true,
       "alerte": false
     },
     {
-      "organisme": "GSM MASTER (L'école du réemploi)",
+      "organisme": "Prix non publié sur leur site — demandez un devis. Formation éligible CPF car RNCP actif (plafond 4 500 €).",
       "lieu": "Paris / Île-de-France",
       "intitule": "Réparateur de produits électroniques nomades",
       "certification": "RNCP41732 — ✅ ACTIVE",
@@ -165,13 +182,11 @@
       "s2": "À savoir",
       "s3": "",
       "pedagogie": "C'est le certificateur du titre.L'école du réemploi — la plus spécialisée smartphone de France. Propose aussi de l'alternance (recherche activement des apprentis).",
-      "organisme": "Prix non publié sur leur site — demandez un devis. Formation éligible CPF car RNCP actif (plafond 4 500 €).",
       "cpf": "",
       "recommande": true,
       "alerte": false
     }
   ],
-
   "vae": {
     "titre": "La VAE : obtenir le titre sans payer de formation",
     "resume": "Si vous avez au moins 1 an d'expérience (même bénévole, même en autodidacte) dans la réparation, vous pouvez obtenir le RNCP41732 par VAE — sans suivre de formation.",
@@ -185,7 +200,6 @@
     "url": "https://www.vae-by-imi.fr/vae/niveau4/vae-reparateur-produits-nomades-smartphone-tablette",
     "alerte": "⚠️ Le tarif de l'accompagnement VAE n'est pas affiché publiquement — demandez un devis. Et méfiez-vous : beaucoup d'organismes VAE n'accompagnent pas réellement sur un titre aussi technique."
   },
-
   "piegesCPF": [
     {
       "titre": "« Formation 100 % financée par le CPF »",
@@ -210,6 +224,84 @@
     {
       "titre": "« Demande rétroactive » des financements",
       "texte": "Aucune prise en charge n'est rétroactive. Déposez votre dossier AVANT de commencer et attendez l'accord écrit."
+    },
+    {
+      "titre": "L'ancien code RNCP37416 encore proposé",
+      "texte": "Il est INACTIF depuis le 27/03/2026, remplacé par RNCP41732. Si un organisme vous vend le RNCP37416, demandez quel code sera réellement délivré sur le certificat."
+    },
+    {
+      "titre": "Le complément 2027 caché dans la validation 2026",
+      "texte": "Depuis le 02/10/2026, valider un achat sur Mon Compte Formation vous engage à un complément pouvant atteindre 200 € en 2027 (selon le PLF, non voté). Pas de majoration si un tiers cofinance au moins 150 €."
+    },
+    {
+      "titre": "FranceConnect+ obligatoire, et il faut le prévoir",
+      "texte": "Depuis la réforme, l'accès à Mon Compte Formation passe par FranceConnect+ (Identité Numérique La Poste ou France Identité). Sans ce compte, prévoyez la procédure par courrier : environ 4 semaines."
+    }
+  ],
+  "opco": {
+    "titre": "Quel OPCO finance un réparateur smartphone ?",
+    "reponse": "OPCO 2i — et pas AFDAS ni Atlas.",
+    "detail": "Si votre code APE est 3313Z (réparation de matériels électroniques), votre convention collective dominante est IDCC 3248 (Métallurgie). La branche « Métallurgie et recyclage » est gérée par OPCO 2i. Atlas n'apparaît que pour les 3313Z rattachés à SYNTEC (IDCC 1486), soit environ 12 % des cas.",
+    "verifie": "partiel",
+    "note": "Répartition APE→IDCC issue de sources secondaires (Opco Direct / DARES). À confirmer avec votre SIRET directement auprès d'OPCO 2i.",
+    "url": "https://www.opco2i.fr",
+    "lienTrouver": "https://www.trouver-mon-opco.fr/annuaire-opco/"
+  },
+  "alternance": {
+    "titre": "L'alternance : la seule voie vraiment à 0 €",
+    "fait": "C'est la loi, pas une promesse commerciale.",
+    "regles": [
+      {
+        "type": "Apprentissage",
+        "texte": "« Aucune contrepartie financière ne peut être demandée à l'apprenti » — service-public.gouv.fr, fiche F2918.",
+        "limite": "Limite d'âge : 29 ans révolus (dérogations : RQTH sans limite, niveau ≤ diplôme visé jusqu'à 35 ans)."
+      },
+      {
+        "type": "Contrat de professionnalisation",
+        "texte": "« La formation est gratuite, le salarié n'a rien à débourser » — service-public.gouv.fr, fiche F15478.",
+        "limite": ""
+      }
+    ],
+    "rythme": "RNCP41732 en alternance : 1 jour au CFA / 4 jours en entreprise. RNCP41691 (responsable d'atelier, niveau 5) sur 2 ans.",
+    "organismes": "GSM Master (Paris et Lyon), avec un déploiement via l'AFPA.",
+    "verdict": "C'est la voie à privilégier si vous êtes éligible. Gratuite, rémunérée, avec un titre RNCP actif."
+  },
+  "resteAChargeProfils": [
+    {
+      "profil": "Demandeur d'emploi (avec abondement France Travail)",
+      "reste": "0 €",
+      "detail": "Exonéré de la participation de 150 €",
+      "couleur": "vert"
+    },
+    {
+      "profil": "Apprenti ou contrat de professionnalisation",
+      "reste": "0 €",
+      "detail": "Interdiction légale de demander une contrepartie",
+      "couleur": "vert"
+    },
+    {
+      "profil": "Salarié via OPCO ou employeur",
+      "reste": "0 €",
+      "detail": "Les 150 € sont remboursables dans ce cas",
+      "couleur": "vert"
+    },
+    {
+      "profil": "Salarié, CPF seul",
+      "reste": "150 €",
+      "detail": "+ jusqu'à 200 € différés en 2027 (PLF, non voté)",
+      "couleur": "orange"
+    },
+    {
+      "profil": "Micro-entrepreneur, titre RNCP",
+      "reste": "150 €",
+      "detail": "Le RNCP n'est pas plafonné",
+      "couleur": "orange"
+    },
+    {
+      "profil": "Micro-entrepreneur, microsoudure RS",
+      "reste": "150 € + le dépassement",
+      "detail": "Plafond 1 500 € : une formation à 4 500 € laisse 3 150 € à payer",
+      "couleur": "rouge"
     }
   ]
 }

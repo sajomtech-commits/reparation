@@ -27,9 +27,72 @@
     rendreRegles(d.reglesCles);
     rendreCertifications(d.certifications);
     rendreSimulateur(d.simulateur);
+    rendreProfils(d.resteAChargeProfils);
+    rendreAlternance(d.alternance);
+    rendreOPCO(d.opco);
     rendreFormations(d.formations);
     rendreVAE(d.vae);
     rendrePieges(d.piegesCPF);
+  }
+
+  /* ---------- Reste à charge par profil ---------- */
+  function rendreProfils(list) {
+    const el = $('#profils');
+    if (!el) return;
+    const coul = { vert: 'var(--vert)', orange: 'var(--orange)', rouge: 'var(--rouge)' };
+    el.innerHTML = `
+      <div class="table-wrap"><table>
+        <thead><tr><th>Votre situation</th><th>Reste à charge</th><th>Pourquoi</th></tr></thead>
+        <tbody>${list.map(p => `
+          <tr>
+            <td><strong>${esc(p.profil)}</strong></td>
+            <td style="font-weight:800;color:${coul[p.couleur] || 'var(--text)'};white-space:nowrap">${esc(p.reste)}</td>
+            <td>${esc(p.detail)}</td>
+          </tr>`).join('')}</tbody>
+      </table></div>`;
+  }
+
+  /* ---------- Alternance ---------- */
+  function rendreAlternance(a) {
+    const el = $('#alternance-conteneur');
+    if (!el) return;
+    el.innerHTML = `
+      <div class="note-box" style="background:rgba(63,185,80,.08);border-color:rgba(63,185,80,.3)">
+        <strong>${esc(a.titre)}</strong> — ${esc(a.fait)}
+      </div>
+      ${a.regles.map(r => `
+        <div class="alert" style="border-left-color:var(--vert)">
+          <span class="ico">✅</span>
+          <div>
+            <h4>${esc(r.type)}</h4>
+            <p>${esc(r.texte)}</p>
+            ${r.limite ? `<p style="margin-top:6px;font-size:.82rem;color:var(--text-faint)">${esc(r.limite)}</p>` : ''}
+          </div>
+        </div>`).join('')}
+      <div class="table-wrap" style="margin-top:16px"><table>
+        <tbody>
+          <tr><td style="width:200px"><strong>Rythme</strong></td><td>${esc(a.rythme)}</td></tr>
+          <tr><td><strong>Organismes</strong></td><td>${esc(a.organismes)}</td></tr>
+          <tr><td><strong>Verdict</strong></td><td><strong style="color:var(--vert)">${esc(a.verdict)}</strong></td></tr>
+        </tbody>
+      </table></div>`;
+  }
+
+  /* ---------- OPCO ---------- */
+  function rendreOPCO(o) {
+    const el = $('#opco-conteneur');
+    if (!el) return;
+    el.innerHTML = `
+      <div class="note-box">
+        <strong style="font-size:1.1rem">${esc(o.reponse)}</strong>
+        <p style="margin-top:10px">${esc(o.detail)}</p>
+        <p style="margin-top:10px;font-size:.83rem;color:var(--text-faint)">
+          ⚠️ ${esc(o.note)}
+        </p>
+      </div>
+      <p style="margin-top:14px">
+        <a href="${esc(o.lienTrouver)}" target="_blank" rel="noopener" class="btn btn-ghost">Trouver mon OPCO par code APE →</a>
+      </p>`;
   }
 
   /* ---------- Règles clés ---------- */
