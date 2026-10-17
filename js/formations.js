@@ -32,7 +32,61 @@
     rendreOPCO(d.opco);
     rendreFormations(d.formations);
     rendreVAE(d.vae);
+    rendreFonds(d.fondsReparation);
+    rendreRecommandation(d.recommandation);
+    rendreOrganismesAlerte(d.organismesAlerte);
     rendrePieges(d.piegesCPF);
+  }
+
+  /* ---------- Fonds réparation FF3E ---------- */
+  function rendreFonds(f) {
+    const el = $('#fonds-conteneur');
+    if (!el || !f) return;
+    el.innerHTML = `
+      <div class="note-box" style="background:rgba(63,185,80,.08);border-color:rgba(63,185,80,.3)">
+        <strong style="font-size:1.05rem">${esc(f.resume)}</strong>
+      </div>
+      <div class="table-wrap" style="margin-top:16px"><table>
+        <thead><tr><th>Niveau de la formation</th><th>Tarif horaire</th><th>Plafond</th></tr></thead>
+        <tbody>${f.grille.map(g => `
+          <tr><td><strong>${esc(g.niveau)}</strong></td>
+              <td class="prix">${esc(g.tarif)}</td>
+              <td class="prix">${esc(g.plafond)}</td></tr>`).join('')}
+        </tbody>
+      </table></div>
+      <div class="note-box" style="margin-top:14px">
+        <strong>Conditions.</strong> ${esc(f.conditions)}
+      </div>
+      <div class="note-box warn">
+        <strong>Verdict.</strong> ${esc(f.verdict)}
+      </div>
+      <p style="margin-top:12px"><a href="${esc(f.url)}" target="_blank" rel="noopener" class="btn btn-ghost">Soutien Formation 3E →</a></p>`;
+  }
+
+  /* ---------- Recommandation ---------- */
+  function rendreRecommandation(r) {
+    const el = $('#recommandation-conteneur');
+    if (!el || !r) return;
+    el.innerHTML = r.cas.map(c => `
+      <article class="card" style="margin-bottom:12px">
+        <div class="card-top">
+          <span class="tag t-guide">${esc(c.profil)}</span>
+          <span class="note" style="color:var(--vert)">${esc(c.prix)}</span>
+        </div>
+        <h4 style="color:var(--accent)">→ ${esc(c.action)}</h4>
+        <p class="pourquoi">${esc(c.detail)}</p>
+      </article>`).join('');
+  }
+
+  /* ---------- Signaux d'alerte organismes ---------- */
+  function rendreOrganismesAlerte(list) {
+    const el = $('#organismes-alerte');
+    if (!el || !list) return;
+    el.innerHTML = list.map(a => `
+      <div class="alert">
+        <span class="ico">${esc(a.niveau)}</span>
+        <div><h4>${esc(a.nom)}</h4><p>${esc(a.raison)}</p></div>
+      </div>`).join('');
   }
 
   /* ---------- Reste à charge par profil ---------- */

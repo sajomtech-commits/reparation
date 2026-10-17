@@ -84,6 +84,30 @@
       "plafondRS": true,
       "url": "https://www.francecompetences.fr/recherche/rs/7269/",
       "note": "✅ L'alternative ACTIVE à RS6375 pour le reconditionnement. Attention : c'est une certification RS, donc plafonnée à 1 500 € par le CPF."
+    },
+    {
+      "code": "RNCP38718",
+      "titre": "Agent de reconditionnement numérique (TP)",
+      "etat": "Active",
+      "echeance": "23-06-2029",
+      "niveau": "Niveau 3",
+      "certificateur": "AFPA notamment",
+      "cpf": true,
+      "plafondRS": false,
+      "url": "https://www.francecompetences.fr/recherche/rncp/38718",
+      "note": "Niveau 3 (CAP/BEP). Le seul titre du marché avec des PRIX PUBLICS : AFPA affiche 9 009 € HT pour 770 h, ou 4 393 € HT pour le seul bloc « Dépanner et réparer un équipement numérique » (280 h)."
+    },
+    {
+      "code": "RNCP41691",
+      "titre": "Responsable d'atelier de réparation de produits électroniques",
+      "etat": "Active",
+      "echeance": "27-11-2028",
+      "niveau": "Niveau 5",
+      "certificateur": "GSM MASTER",
+      "cpf": true,
+      "plafondRS": false,
+      "url": "https://www.francecompetences.fr/recherche/rncp/41691",
+      "note": "Le niveau au-dessus : encadrer un atelier. 651 h, inclut la micro-soudure avancée. ⚠️ Le « 100 % d'insertion » affiché porte sur 2 certifiés — statistiquement vide."
     }
   ],
   "simulateur": {
@@ -264,7 +288,8 @@
     ],
     "rythme": "RNCP41732 en alternance : 1 jour au CFA / 4 jours en entreprise. RNCP41691 (responsable d'atelier, niveau 5) sur 2 ans.",
     "organismes": "GSM Master (Paris et Lyon), avec un déploiement via l'AFPA.",
-    "verdict": "C'est la voie à privilégier si vous êtes éligible. Gratuite, rémunérée, avec un titre RNCP actif."
+    "verdict": "C'est la voie à privilégier si vous êtes éligible. Gratuite, rémunérée, avec un titre RNCP actif.",
+    "chiffres": "GSM Master publie ses taux d'insertion réels : 2025 = 8 certifiés, 100 % en emploi / 88 % dans le métier visé. 2024 = 10 certifiés, 56 % / 44 %. ⚠️ Ces chiffres portent sur 8 à 10 personnes : ils sont vrais mais fragiles statistiquement."
   },
   "resteAChargeProfils": [
     {
@@ -303,5 +328,91 @@
       "detail": "Plafond 1 500 € : une formation à 4 500 € laisse 3 150 € à payer",
       "couleur": "rouge"
     }
-  ]
+  ],
+  "fondsReparation": {
+    "titre": "Le levier que presque personne ne connaît : le fonds réparation",
+    "resume": "Le Soutien Formation 3E (label QualiRépar) rembourse la formation à l'ENTREPRISE de réparation labellisée. Pour ce métier, c'est souvent plus rentable que le CPF.",
+    "grille": [
+      {
+        "niveau": "Niveau 3",
+        "tarif": "7 €/h",
+        "plafond": "3 500 €"
+      },
+      {
+        "niveau": "Niveau 4",
+        "tarif": "8 €/h",
+        "plafond": "4 400 €"
+      },
+      {
+        "niveau": "Niveau 5",
+        "tarif": "9 €/h",
+        "plafond": "5 400 €"
+      }
+    ],
+    "conditions": "Entreprise labellisée QualiRépar. Formation Qualiopi et certifiante (RNCP/TP/CQP/RS). Maximum 15 % de distanciel. Demande à déposer À LA FIN de la formation via ff3e.lopcommerce.com (formations terminées entre le 01/01 et le 31/12/2026).",
+    "verdict": "Si vous visez de créer une activité de réparation, obtenez le label QualiRépar : il ouvre ce financement, que le CPF ne couvre pas.",
+    "url": "https://ff3e.lopcommerce.com/",
+    "verifie": true
+  },
+  "organismesAlerte": [
+    {
+      "nom": "The Repair Academy — RS6375",
+      "niveau": "🔴",
+      "raison": "Certification INACTIVE depuis le 20/09/2026, mais toujours vendue 4 500 € (70 h) ou 2 250 € (hybride) comme CPF-éligible."
+    },
+    {
+      "nom": "Formatech / RS7269",
+      "niveau": "🟠",
+      "raison": "Le remplaçant de RS6375 est actif, MAIS son site forma-tech.fr renvoie HTTP 503 « site suspendu » (vérifié). Aucun prix ni durée accessible. Et prérequis : 1 an d'expérience → exclut un débutant."
+    },
+    {
+      "nom": "Ninety (microsoudure 3 490 €)",
+      "niveau": "🟠",
+      "raison": "Brochure annonçant une formation « certifiante et reconnue par l'État, éligible CPF » sans aucun numéro RS/RNCP identifiable. Exigez le numéro par écrit."
+    },
+    {
+      "nom": "Électronique Lab",
+      "niveau": "🟠",
+      "raison": "Aucune certification → 0 € de CPF possible. Et propose du distanciel en microsoudure, ce qui est pédagogiquement douteux sur cette discipline."
+    },
+    {
+      "nom": "Toute promesse de salaire élevé",
+      "niveau": "🔴",
+      "raison": "Le livre blanc Hub du Sud 2026 : ces métiers « sont loin d'apparaître comme des métiers en tension » et « la rentabilité reste faible ». Aucune source publique fiable de salaire moyen."
+    },
+    {
+      "nom": "« Le kit de microsoudure est financé par le CPF »",
+      "niveau": "🟠",
+      "raison": "Faux. The Repair Academy le dit elle-même : les financeurs ne prennent pas en charge le kit de micro-soudure (~120-170 €)."
+    }
+  ],
+  "recommandation": {
+    "titre": "Ma recommandation, selon votre situation",
+    "cas": [
+      {
+        "profil": "Salarié, moins de 30 ans, ou RQTH",
+        "action": "GSM Master — RNCP41732 en ALTERNANCE",
+        "prix": "0 €",
+        "detail": "Rémunéré, titre actif jusqu'en 2028, et c'est le certificateur du titre."
+      },
+      {
+        "profil": "Reconversion sans employeur",
+        "action": "France Travail d'abord (AIF / abondement) sur un RNCP",
+        "prix": "0 € si accepté",
+        "detail": "Le CPF seul ne suffira pas sur une formation à plusieurs milliers d'euros. Présentez le projet au conseiller AVANT de vous inscrire."
+      },
+      {
+        "profil": "Déjà en activité / auto-entrepreneur",
+        "action": "Label QualiRépar + Soutien Formation 3E",
+        "prix": "Jusqu'à 4 400 € remboursés",
+        "detail": "Le levier le plus rentable et le plus ignoré. Formation remboursée après coup à l'entreprise labellisée."
+      },
+      {
+        "profil": "Veut juste la micro-soudure",
+        "action": "Rien de CPF-financeable pour un débutant aujourd'hui",
+        "prix": "~1 950 € à 3 490 €",
+        "detail": "RS6375 inactif, RS7269 ignore les débutants et son organisme est injoignable. Financer autrement, et exiger le cadre de certification par écrit."
+      }
+    ]
+  }
 }
