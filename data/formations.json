@@ -1,0 +1,215 @@
+{
+  "dateVerification": "Vérifié sur service-public.gouv.fr, moncompteformation.gouv.fr et francecompetences.fr",
+
+  "reglesCles": [
+    {
+      "icone": "⚠️",
+      "titre": "Le CPF ne finance plus que 1 500 € pour une certification RS",
+      "texte": "Depuis le 26 février 2026 (décret d'application de l'art. 203 de la loi de finances 2026), le CPF est plafonné à 1 500 € pour les certifications du Répertoire Spécifique. Pour les titres RNCP, le plafond est de 4 500 €. Conséquence directe : une formation RS à 4 500 € vous laisse 3 000 € à payer, même avec des droits CPF pleins.",
+      "source": "https://entreprendre.service-public.gouv.fr/actualites/A18831",
+      "sourceNom": "Service-Public Entreprendre"
+    },
+    {
+      "icone": "💶",
+      "titre": "150 € de participation obligatoire — sauf si vous êtes demandeur d'emploi",
+      "texte": "Depuis le 2 avril 2026 (décret n° 2026-234), la participation forfaitaire est passée à 150 €. Elle s'applique même si vos droits CPF couvrent toute la formation. Exonérations : demandeurs d'emploi, abondement employeur, C2P, AT-MP. Un organisme n'a PAS le droit de vous la rembourser.",
+      "source": "https://www.moncompteformation.gouv.fr/espace-public/une-participation-financiere-pourquoi-et-comment",
+      "sourceNom": "Mon Compte Formation"
+    },
+    {
+      "icone": "🚫",
+      "titre": "Une certification inactive n'est PLUS finançable",
+      "texte": "Le CPF ne prend en charge que les certifications actives. Une certification « Inactive » sur France Compétences n'ouvre plus droit au financement — même si l'organisme continue de l'afficher comme « éligible CPF ». C'est le point à vérifier AVANT de signer.",
+      "source": "https://www.francecompetences.fr",
+      "sourceNom": "France Compétences"
+    }
+  ],
+
+  "certifications": [
+    {
+      "code": "RNCP41732",
+      "titre": "Réparateur de produits électroniques nomades",
+      "etat": "Active",
+      "echeance": "27/11/2028",
+      "niveau": "Niveau 4 (Bac)",
+      "certificateur": "GSM MASTER (L'école du réemploi)",
+      "cpf": true,
+      "plafondRS": false,
+      "url": "https://www.francecompetences.fr/recherche/rncp/41732",
+      "note": "⭐ LE titre à viser. Réparateur de smartphones, tablettes, consoles portables et montres connectées. Inclut la vente/conseil, la préparation du poste en sécurité, et le diagnostic/réparation. C'est exactement le métier."
+    },
+    {
+      "code": "RNCP42306",
+      "titre": "Réparateur conseil d'équipements électriques et électroniques",
+      "etat": "Active",
+      "echeance": "29/05/2031",
+      "niveau": "Niveau 4",
+      "certificateur": "Réseau Ducretet",
+      "cpf": true,
+      "plafondRS": false,
+      "url": "https://www.francecompetences.fr/recherche/rncp/42306",
+      "note": "Plus large : électroménager + audiovisuel + électronique. Moins spécialisé smartphone, mais reconnu et accessible en alternance."
+    },
+    {
+      "code": "RS6375",
+      "titre": "Acquérir les compétences en réparation de carte mère de smartphone et en microsoudure",
+      "etat": "Inactive",
+      "echeance": "20-09-2026",
+      "derniereDelivrance": "20-03-2027",
+      "niveau": "RS",
+      "certificateur": "The Repair Academy",
+      "cpf": false,
+      "plafondRS": true,
+      "url": "https://www.francecompetences.fr/recherche/rs/6375/",
+      "note": "🚨 ATTENTION — Cette certification est INACTIVE depuis le 20/09/2026. The Repair Academy continue pourtant d'afficher sa formation à 4 500 € comme « éligible CPF ». Le CPF ne finance plus une certification inactive. À vérifier impérativement sur Mon Compte Formation avant toute inscription."
+    }
+  ],
+
+  "simulateur": {
+    "titre": "Le vrai reste à charge",
+    "intro": "Trois scénarios réels, calculés avec les règles de 2026. Le « 100 % CPF » n'existe quasiment plus.",
+    "scenarios": [
+      {
+        "cas": "Formation RS6375 (microsoudure) à 2 250 €",
+        "prix": 2250,
+        "plafond": 1500,
+        "paiement": 150,
+        "statut": "Salarié",
+        "resteEmploi": false
+      },
+      {
+        "cas": "Formation RS6375 présentielle à 4 500 €",
+        "prix": 4500,
+        "plafond": 1500,
+        "paiement": 150,
+        "statut": "Salarié",
+        "resteEmploi": false
+      },
+      {
+        "cas": "Titre RNCP41732 par mutation/alternance",
+        "prix": 0,
+        "plafond": 4500,
+        "paiement": 0,
+        "statut": "Alternance",
+        "resteEmploi": "Alternance = gratuit + rémunéré"
+      }
+    ]
+  },
+
+  "formations": [
+    {
+      "organisme": "The Repair Academy",
+      "lieu": "Toulouse · Paris",
+      "intitule": "Formation certifiante microsoudure (RS6375)",
+      "certification": "RS6375 — ⚠️ INACTIVE",
+      "duree": "70 h (10 j) ou 35 h hybride",
+      "prix": "4 500 € ou 2 250 €",
+      "format": "Présentiel / hybride",
+      "url": "https://therepairacademy.com/formation-micro-soudure-reparation-carte-mere-smartphone/",
+      "urlFinancement": "https://therepairacademy.com/financement-des-formations/",
+      "s1": "Pédagogie",
+      "s2": "Organisme",
+      "s3": "CPF aujourd'hui",
+      "pedagogie": "Le contenu est sérieux et techniquement excellent. Résultats publiés : 94,26 % de réussite à la certification (115 certifiés sur 122), 9,31/10 de satisfaction. Qualiopi.",
+      "organisme": "Organisme Qualiopi, transparent sur ses prix et ses résultats. Leur page financement est la plus honnête du secteur — elle cite les décrets et signale elle-même que la RS est inactive.",
+      "cpf": "⚠️ Plus finançable : certification inactive depuis le 20/09/2026. À 4 500 €, vous payer publiquement de votre poche (sauf autre financier : OPCO, AGEFICE, France Travail).",
+      "recommande": false,
+      "alerte": true
+    },
+    {
+      "organisme": "The Repair Academy",
+      "lieu": "Toulouse",
+      "intitule": "Formation réparation smartphone débutant",
+      "certification": "Aucune (non certifiante)",
+      "duree": "35 h (5 j)",
+      "prix": "1 950 €",
+      "format": "Présentiel",
+      "url": "https://therepairacademy.com/formation-reparation-debutant/",
+      "s1": "Contenu",
+      "s2": "Verdict",
+      "s3": "",
+      "pedagogie": "Diagnostic, écran, batterie, connecteur de charge, logiciels 3uTools et NSYS. Un poste équipé par élève. 9/10 de satisfaction.",
+      "organisme": "Sérieux, mais NON certifiante → pas de CPF possible. À 1 950 € pour du contenu que vous pouvez apprendre gratuitement (voir notre plan 8 semaines), c'est difficile à justifier en autodidacte.",
+      "cpf": "",
+      "recommande": false,
+      "alerte": false
+    },
+    {
+      "organisme": "Réseau Ducretet",
+      "lieu": "Multi-sites France",
+      "intitule": "Réparateur conseil d'équipements électriques et électroniques",
+      "certification": "RNCP42306 — ✅ ACTIVE",
+      "duree": "Alternance (contrat 1-2 ans)",
+      "prix": "0 € en alternance",
+      "format": "Alternance / apprentissage",
+      "url": "https://www.ducretet.net/devenir-alternant/formations/reparateur-conseil-dequipements-electriques-et-electroniques",
+      "s1": "Pourquoi",
+      "s2": "Limite",
+      "s3": "",
+      "pedagogie": "Le meilleur rapport qualité/prix : formation GRATUITE en alternance, ET rémunérée. Titre RNCP actif, reconnu.",
+      "organisme": "Plus large que le smartphone (électroménager, audiovisuel). Intéressant si vous voulez une base polyvalente.",
+      "cpf": "",
+      "recommande": true,
+      "alerte": false
+    },
+    {
+      "organisme": "GSM MASTER (L'école du réemploi)",
+      "lieu": "Paris / Île-de-France",
+      "intitule": "Réparateur de produits électroniques nomades",
+      "certification": "RNCP41732 — ✅ ACTIVE",
+      "duree": "Selon parcours",
+      "prix": "À demander",
+      "format": "Formation / alternance",
+      "url": "https://gsmmaster.fr/faq/",
+      "s1": "Pourquoi",
+      "s2": "À savoir",
+      "s3": "",
+      "pedagogie": "C'est le certificateur du titre.L'école du réemploi — la plus spécialisée smartphone de France. Propose aussi de l'alternance (recherche activement des apprentis).",
+      "organisme": "Prix non publié sur leur site — demandez un devis. Formation éligible CPF car RNCP actif (plafond 4 500 €).",
+      "cpf": "",
+      "recommande": true,
+      "alerte": false
+    }
+  ],
+
+  "vae": {
+    "titre": "La VAE : obtenir le titre sans payer de formation",
+    "resume": "Si vous avez au moins 1 an d'expérience (même bénévole, même en autodidacte) dans la réparation, vous pouvez obtenir le RNCP41732 par VAE — sans suivre de formation.",
+    "conditions": [
+      "Justifier d'au moins 1 an d'expérience professionnelle (salariée, non salariée ou bénévole, continue ou non) en lien avec la réparation de produits nomades",
+      "Aucun niveau d'études minimum requis",
+      "3 blocs de compétences à valider via un dossier de preuves + soutenance devant jury"
+    ],
+    "duree": "6 à 10 mois",
+    "fait": "L'accompagnement VAE est finançable par le CPF, l'AIF ou l'employeur. Organisme vérifié : VAE by imi (Qualiopi), 92 % de validation annoncée.",
+    "url": "https://www.vae-by-imi.fr/vae/niveau4/vae-reparateur-produits-nomades-smartphone-tablette",
+    "alerte": "⚠️ Le tarif de l'accompagnement VAE n'est pas affiché publiquement — demandez un devis. Et méfiez-vous : beaucoup d'organismes VAE n'accompagnent pas réellement sur un titre aussi technique."
+  },
+
+  "piegesCPF": [
+    {
+      "titre": "« Formation 100 % financée par le CPF »",
+      "texte": "Quasiment toujours faux depuis février 2026. Plafonds : 1 500 € (RS) ou 4 500 € (RNCP). Au-delà, c'est vous qui payez. Faites toujours le calcul avant de signer."
+    },
+    {
+      "titre": "Une certification inactive présentée comme éligible",
+      "texte": "Vérifiez TOUJOURS le statut sur francecompetences.fr avant de payer. Cherchez le code RNCP/RS exact, puis regardez « État : Active / Inactive »."
+    },
+    {
+      "titre": "Le remboursement des 150 € proposé par l'organisme",
+      "texte": "C'est INTERDIT. Un organisme qui vous propose de vous rembourser la participation forfaitaire vous expose à un remboursement intégral des droits CPF utilisés. Fuyez."
+    },
+    {
+      "titre": "Les promesses de salaire ou d'emploi garanti",
+      "texte": "Aucun organisme sérieux ne garantit un emploi. Un réparateur indépendant en France gagne en réalité entre 1 500 et 2 500 € net selon sa zone et son volume — pas 4 000 € comme certaines pubs l'annoncent."
+    },
+    {
+      "titre": "Payer une formation débutant à 2 000 € quand le contenu est gratuit",
+      "texte": "Le niveau 1 (écran, batterie, connecteur) s'apprend gratuitement avec iFixit FR et Bricophone. Payez une formation pour le niveau 2 (microsoudure, diagnostic carte mère) ou pour la certification — pas pour les bases."
+    },
+    {
+      "titre": "« Demande rétroactive » des financements",
+      "texte": "Aucune prise en charge n'est rétroactive. Déposez votre dossier AVANT de commencer et attendez l'accord écrit."
+    }
+  ]
+}
